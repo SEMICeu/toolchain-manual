@@ -54,7 +54,7 @@ When a specification is officially released, the persistent URI is maintained as
   <http://www.w3.org/2000/01/rdf-schema#label> "baptsimal name"@en .
 ```
 
-And save the file.
+    And save the file.
 
     3. For the other 2 formats, either they are typed manually or they can be generated with automatic tools such as [EasyRDF](https://www.easyrdf.org/converter), [RDF translator](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwwrnOtvb7AhUN2xoKHVyPCh0QFnoECBEQAQ&url=https%3A%2F%2Frdf-translator.appspot.com%2F&usg=AOvVaw1My-fDwxW5-ZC29xHa5JQy), [RDF validator](http://rdfvalidator.mybluemix.net/)… 
     4. Commit and push the changes in the SEMIC puri repository

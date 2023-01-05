@@ -1,5 +1,6 @@
 # ​Toolchain for Publishing Data Specifications -  User Manual by SEMIC
 
+
 [[TOC]]
 
 # Background
@@ -12,36 +13,27 @@ For the reason that every manifestation, HTML or semantic models, is sequentiall
 
 The expected benefits of applying a systematic support to data specifications lifecycle are:
 
-
-
 1. Harmonised and coherent experience of the browsing data specifications, which in turn seeks to increase the adoption
 2. Promotion of SEMIC data modelling best practices, embedding them in the publication workflows
 3. Support to scaling up of the editorial capacity through automation.
-
 
 # Introduction
 
 This manual describes the tooling that is supporting the editorial workflow for managing data specifications. It provides a hands-on guide on how to start reusing the SEMIC toolchain and how editors can use it to generate data specification artefacts. 
 
-The target audience for this manual:
-
-
+The target audience for this manual are:
 
 1. Editors operating or extending an existing SEMIC data specification;
 2. Any user who wishes to customise the SEMIC publication process to create new data specifications.
-
 
 # Roles, Tasks, Use Cases, Repositories and Tools 
 
 The publication process of a data specification involves 2 roles:
 
-
-
 * An **editor** managing the data specification within its model, metadata, layout and styling
 * A **toolchain developer** in charge to setup the publication environment and processes
 
 During the publication process, multiple tasks are performed covering different tasks executed over one or more use cases:
-
 
 <table>
   <tr>
@@ -51,7 +43,7 @@ During the publication process, multiple tasks are performed covering different 
    </td>
   </tr>
   <tr>
-   <td>Extend an existing data model
+   <td>[Extend an existing data model](task:-extend-an-existing-data-model)
    </td>
    <td>UC1
    </td>
@@ -93,7 +85,7 @@ During the publication process, multiple tasks are performed covering different 
 </table>
 
 
-The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the [Table 2](#bookmark=id.ejufpwqj4w82): 
+The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 
 
 <table>

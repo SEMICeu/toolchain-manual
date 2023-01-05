@@ -52,7 +52,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="editing_HTML_specifications.md">Editing HTML specifications</a></td>
-   <td><a href="editing_HTML_specifications.md#uc4-update-the-publication-metadata-of-the-specification">UC4</a>, <a href="editing_HTML_specifications.md#uc5-adding-a-changelog-section-in-the-specification">UC5</a>, UC6</td>
+   <td><a href="editing_HTML_specifications.md#uc4-update-the-publication-metadata-of-the-specification">UC4</a>, <a href="editing_HTML_specifications.md#uc5-adding-a-changelog-section-in-the-specification">UC5</a>, <a href="editing_HTML_specifications.md#uc6-changing-the-colour-of-the-hyperlinks">UC6</a></td>
   </tr>
   <tr>
    <td><a href="deploy_new_software_releases.md">Deploy new software releases</a></td>

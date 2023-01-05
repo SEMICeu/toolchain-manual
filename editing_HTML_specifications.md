@@ -114,7 +114,7 @@ Having created a new property in UC2, there is a need to inform readers of the n
 	{% raw %}{% endblock %}{% endraw %}
 	```
 
-    Notice the {% raw %}{% block changelog %}{% endraw %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.
+    Notice the {% raw %}{% block changelog %}{% endraw %} at the beginning and the {% raw %}{% endblock %}{% endraw %} at the end to enclose the changelog block that will be used by a generic template.
 
 6. Commit and push the files changed in the SEMIC thema repository
 7. Pull the latest code from the SEMIC publication repository

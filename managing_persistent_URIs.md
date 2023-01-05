@@ -61,17 +61,16 @@ When a specification is officially released, the persistent URI is maintained as
 2. To setup the HTML redirection, pull the latest code from the SEMIC proxy repository
     5. Open, with a text editor, the file “htmlmap.lua” and add, at the end of the file (before the “}”  character), a line for for the new URI:
 
-```
-["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
-```
+		```
+		["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
+		```
 
-and save the file.
-
-
-    Be careful to add a “,” character at the end of the previous line so the properties can be correctly read.
+		and save the file.
 
 
-    Notice the last part of the line “Person%3Abaptismal%20name”, this is the HTML id generated in the UC2 in the index.html concatenating the class with property name.
+		Be careful to add a “,” character at the end of the previous line so the properties can be correctly read.
+
+		Notice the last part of the line “Person%3Abaptismal%20name”, this is the HTML id generated in the UC2 in the index.html concatenating the class with property name.
 
     6. Commit and push the changes to the SEMIC proxy repository
 3. The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:
@@ -87,7 +86,7 @@ and save the file.
   </tr>
   <tr>
    <td>git pull</td>
-   <td>Insert the GitHub username and personal access token</td>
+   <td>Pull latest code and insert the GitHub username and personal access token</td>
   </tr>
   <tr>
    <td>make nginx</td>

@@ -48,13 +48,11 @@ Notice the “,” character before to concatenate with the previous section and
 3. In step 2 we indicated that the filename of the JSON configuration of the new Core Person should be in the config folder of the SEMIC thema repository called core-person-test.json, so duplicate core-person-2.json and rename it core-person-test.json 
 4. Edit the core-person-test.json and modify just the “eap” property to
 
-    ```
+```
 "eap": "CorePerson-test.EAP",
 ```
 
-
-
-    Be careful to keep a  “,” at the end to concatenate with the next section and save the file.
+Be careful to keep a  “,” at the end to concatenate with the next section and save the file.
 
 5. Now let’s duplicate CorePerson2.EAP by creating a copy named CorePerson-test.EAP
 6. Commit and push in the SEMIC thema repository and after in the SEMIC publication repository.

@@ -62,20 +62,22 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 10. Click again on “Add new tagged value” icon, in Tag type “uri” with Value “http://data.europa.eu/m8g/baptismalName”, click OK
 11. As the UML diagram changed but we reuse the same folder of the original Core Person, we change the core-person-test.json file and modify just the “site” property to
 
-```
-"site": "site-skeleton/core-person-test",
-```
-and save the file.
+	```
+	"site": "site-skeleton/core-person-test",
+	```
+
+	and save the file.
 
 12. Under “site-skeleton” folder duplicate the core-person folder and rename it “core-person-test 
 13. From Enterprise Architect, save the picture of the UML diagram from the menu “Publish -> Image -> Save to File” and save it under the “site-skeleton/core-person-test” folder with the name “overview.jpg”, overwriting the current one.
 14. Commit the 4 files changed (CorePerson-test.EAP, core-person-test.json and overview.jpg and semic-icon.png) and push to them to the SEMIC thema repository
 15. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
-```
-"dummy": "2",
-```
-and commit and push to the SEMIC publication repository
+	```
+	"dummy": "2",
+	```
+
+	and commit and push to the SEMIC publication repository
 
 **Test the result**
 

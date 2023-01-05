@@ -45,35 +45,6 @@ During the publication process, multiple tasks are performed covering different 
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 
-| Repository                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SEMIC thema                                | This repository mainly contains:
-<br/>
-EAP files, to be opened by Enterprise Architect to change the data models
-<br/>
-The template folder, including templates, per language, to change the specific layout of HTML specification
-<br/>
-Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification
-<br/>
-The config folder, including the JSON configuration file per data model to change various parameters for the publication process |
-| SEMIC publication                          | This repository mainly contains:
-
-The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository
-
-The config folder, including the main JSON publication file under the config/dev folder 
-
-.circleci folder, including the configuration file of the CircleCI pipeline |
-| SEMIC generated                            | This repository mainly contains:
-
-The report folder which contains the logs of the execution of the CircleCI pipeline
-
-The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD. |
-| SEMIC puri                                 | This repository mainly contains:
-
-The release folder which contains, for each namespace, the RDF associated the respective URI
-| SEMIC proxy                                | This repository mainly contains:
-
-The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection. |
 <table>
   <tr>
    <td><strong>Repository</strong>

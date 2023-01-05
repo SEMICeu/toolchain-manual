@@ -111,7 +111,7 @@ Having created a new property in UC2, there is a need to inform readers of the n
 	<p>
 	The new property "baptsimal name" has been added.
 	<p>
-	{% endblock %}
+	{% raw %}{% endblock %}{% endraw %}
 	```
 
     Notice the {% raw %}{% block changelog %}{% endraw %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.

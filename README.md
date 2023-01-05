@@ -48,14 +48,13 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 | Repository                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SEMIC thema                                | This repository mainly contains:
-
-
+<br/>
 EAP files, to be opened by Enterprise Architect to change the data models
-
+<br/>
 The template folder, including templates, per language, to change the specific layout of HTML specification
-
+<br/>
 Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification
-
+<br/>
 The config folder, including the JSON configuration file per data model to change various parameters for the publication process |
 | SEMIC publication                          | This repository mainly contains:
 

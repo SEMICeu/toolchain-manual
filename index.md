@@ -46,6 +46,10 @@ During the publication process, multiple tasks are performed covering different 
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 
+| Repository | Description |
+|---|---|
+| <a href="https://github.com/SEMICeu/uri.semic.eu-thema">SEMIC thema</a> | This repository mainly contains:<ul><li>EAP files, to be opened by Enterprise Architect to change the data models<li>The template folder, including templates, per language, to change the specific layout of HTML specification<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li></ul> |
+
 
 <table>
   <tr>

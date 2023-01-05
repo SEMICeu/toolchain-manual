@@ -76,3 +76,23 @@ pre {
     border-color: #e0cb52;
     background: #fcfaee !important;
 }
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: 3px solid #005a9c;
+}
+
+table, thead, tr, td {
+    border-width: 1px;
+    border-style: solid;
+}
+
+table tr:first-child td {
+    background: #005a9c;
+    color: #fff;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background: #f0f6ff}

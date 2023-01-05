@@ -59,7 +59,7 @@ When a specification is officially released, the persistent URI is maintained as
     3. For the other 2 formats, either they are typed manually or they can be generated with automatic tools such as [EasyRDF](https://www.easyrdf.org/converter), [RDF translator](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwwrnOtvb7AhUN2xoKHVyPCh0QFnoECBEQAQ&url=https%3A%2F%2Frdf-translator.appspot.com%2F&usg=AOvVaw1My-fDwxW5-ZC29xHa5JQy), [RDF validator](http://rdfvalidator.mybluemix.net/)… 
     4. Commit and push the changes in the SEMIC puri repository
 2. To setup the HTML redirection, pull the latest code from the SEMIC proxy repository
-    5. Open, with a text editor, the file “htmlmap.lua” and add, at the end of the file (before the “}”  character), a line for for the new URI:
+    1. Open, with a text editor, the file “htmlmap.lua” and add, at the end of the file (before the “}”  character), a line for for the new URI:
 
 		```
 		["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
@@ -72,7 +72,7 @@ When a specification is officially released, the persistent URI is maintained as
 
 		Notice the last part of the line “Person%3Abaptismal%20name”, this is the HTML id generated in the UC2 in the index.html concatenating the class with property name.
 
-    6. Commit and push the changes to the SEMIC proxy repository
+    2. Commit and push the changes to the SEMIC proxy repository
 3. The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:
 
 <table>

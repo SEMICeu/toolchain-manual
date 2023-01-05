@@ -42,17 +42,27 @@ During the publication process, multiple tasks are performed covering different 
    <td><a href="extend_existing_data_model.md">Extend an existing data model</a></td>
    <td>UC1</td>
   </tr>
+  <tr>
+   <td><a href="updating_UML_data_model.md">Updating the UML data model</a></td>
+   <td>UC2</td>
+  </tr>
+  <tr>
+   <td><a href="managing_persistent_URIs.md">Managing Persistent URIs</a></td>
+   <td>UC3</td>
+  </tr>
+  <tr>
+   <td><a href="editing_HTML_specifications.md">Editing HTML specifications</a></td>
+   <td>UC4, UC5, UC6</td>
+  </tr>
+  <tr>
+   <td><a href="deploy_new_software_releases.md">Deploy new software releases</a></td>
+   <td>UC7</td>
+  </tr>
+  <tr>
+   <td><a href="customise_publication_process.md">Customise the publication process</a></td>
+   <td>UC8, UC9</td>
+  </tr>
 </table>
-  
-| Task                                                                  | Use cases     |
-|-----------------------------------------------------------------------|---------------|
-| [Extend an existing data model](extend_existing_data_model.md)        | UC1           |
-| [Updating the UML data model](updating_UML_data_model.md)             | UC2           | 
-| [Managing Persistent URIs](managing_persistent_URIs.md)               | UC3           |
-| [Editing HTML specifications](editing_HTML_specifications.md)         | UC4, UC5, UC6 |
-| [Deploy new software releases](deploy_new_software_releases.md)       | UC7           |
-| [Customise the publication process](customise_publication_process.md) | UC8, UC9      |
-
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 

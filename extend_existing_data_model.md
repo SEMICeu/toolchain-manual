@@ -1,6 +1,5 @@
 ## Task: Extend an existing data model
 
-
 ### UC1: Create a new Core Person 
 
 **Objective**
@@ -9,20 +8,14 @@ Setup a new custom data specification from an existing one in order to add new p
 
 **Roles involved**
 
-
-
 * An editor that needs to create a new specification
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Be able to understand a JSON structure to edit configuration files
 
 **Repositories**
-
-
 
 * SEMIC thema repository, to access the JSON configuration file and the EAP file
 * SEMIC publication repository, to access  the JSON publication file
@@ -30,19 +23,15 @@ Setup a new custom data specification from an existing one in order to add new p
 
 **Tools**
 
-
-
 * A Git client to pull, commit and push to the repositories
 * A text editor, to edit configuration files
 
 **Steps**
 
-
-
 1. Pull the latest code from the SEMIC thema, publication and generated repository 
 2. In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):
 
-    ```
+```
 ,{
     "dummy": "1",
     "urlref": "/doc/core-vocabulary/core-person-test",
@@ -75,8 +64,6 @@ Setup a new custom data specification from an existing one in order to add new p
 **Test the result**
 
 Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder (as indicated in the publication.json file) including: 
-
-
 
 * index.html and index_en.html
 * A “context” folder containing the JSON-LD context files

@@ -75,28 +75,28 @@ When a specification is officially released, the persistent URI is maintained as
     2. Commit and push the changes to the SEMIC proxy repository
 3. The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:
 
-<table>
-  <tr>
-   <td><strong>Command</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>cd uri.semic.eu-proxy/</td>
-   <td>Enter in the folder of the SEMIC proxy repository</td>
-  </tr>
-  <tr>
-   <td>git pull</td>
-   <td>Pull latest code and insert the GitHub username and personal access token</td>
-  </tr>
-  <tr>
-   <td>make nginx</td>
-   <td>Create a new version of the nginx web server</td>
-  </tr>
-  <tr>
-   <td>make run</td>
-   <td>Run the nginx web server</td>
-  </tr>
-</table>
+	<table>
+	  <tr>
+	   <td><strong>Command</strong></td>
+	   <td><strong>Description</strong></td>
+	  </tr>
+	  <tr>
+	   <td>cd uri.semic.eu-proxy/</td>
+	   <td>Enter in the folder of the SEMIC proxy repository</td>
+	  </tr>
+	  <tr>
+	   <td>git pull</td>
+	   <td>Pull latest code and insert the GitHub username and personal access token</td>
+	  </tr>
+	  <tr>
+	   <td>make nginx</td>
+	   <td>Create a new version of the nginx web server</td>
+	  </tr>
+	  <tr>
+	   <td>make run</td>
+	   <td>Run the nginx web server</td>
+	  </tr>
+	</table>
 
 **Test the result**
 

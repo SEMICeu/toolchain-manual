@@ -74,63 +74,48 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-thema">SEMIC thema</a></td>
    <td>This repository mainly contains:
-		<ul>
-
-		<li>EAP files, to be opened by Enterprise Architect to change the data models
-
-		<li>The template folder, including templates, per language, to change the specific layout of HTML specification
-
-		<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification
-
-		<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process
-		</li>
-		</ul>
+	<ul>
+		<li>EAP files, to be opened by Enterprise Architect to change the data models</li>
+		<li>The template folder, including templates, per language, to change the specific layout of HTML specification</li>
+		<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification</li>
+		<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li>
+	</ul>
    </td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-publication">SEMIC publication</a></td>
    <td>This repository mainly contains:
-		<ul>
-
-		<li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository
-
-		<li>The config folder, including the main JSON publication file under the config/dev folder 
-
-		<li>.circleci folder, including the configuration file of the CircleCI pipeline
-		</li>
-		</ul>
+	<ul>
+		<li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository</li>
+		<li>The config folder, including the main JSON publication file under the config/dev folder</li>
+		<li>.circleci folder, including the configuration file of the CircleCI pipeline</li>
+	</li>
+	</ul>
    </td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-generated">SEMIC generated</a></td>
    <td>This repository mainly contains:
-		<ul>
-
-		<li>The report folder which contains the logs of the execution of the CircleCI pipeline
-
-		<li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD
-		</li>
-		</ul>
+	<ul>
+		<li>The report folder which contains the logs of the execution of the CircleCI pipeline</li>
+		<li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD</li>
+	</ul>
    </td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-puris">SEMIC puri</a></td>
    <td>This repository mainly contains:
-		<ul>
-
-		<li>The release folder which contains, for each namespace, the RDF associated the respective URI
-		</li>
-		</ul>
+	<ul>
+		<li>The release folder which contains, for each namespace, the RDF associated the respective URI</li>
+	</ul>
    </td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-proxy">SEMIC proxy</a></td>
    <td>This repository mainly contains:
-		<ul>
-
-		<li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection
-		</li>
-		</ul>
+	<ul>
+		<li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection</li>
+	</ul>
    </td>
   </tr>
 </table>

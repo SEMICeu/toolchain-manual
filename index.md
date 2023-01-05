@@ -35,11 +35,20 @@ The publication process of a data specification involves 2 roles:
 
 During the publication process, multiple tasks are performed covering different tasks executed over one or more use cases:
 
+| Task  | Use cases |
+|---|---|
+| [Extend an existing data model](task-extend-an-existing-data-model)  |  UC1 |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
 <table>
   <tr>
    <td><strong>Task</strong>
    </td>
-   <td><strong>Use case</strong>
+   <td><strong></strong>
    </td>
   </tr>
   <tr>

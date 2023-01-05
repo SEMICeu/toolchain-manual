@@ -37,62 +37,12 @@ During the publication process, multiple tasks are performed covering different 
 
 | Task  | Use cases |
 |---|---|
-| [Extend an existing data model](#task-extend-an-existing-data-model)  |  UC1 |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-
-<table>
-  <tr>
-   <td><strong>Task</strong>
-   </td>
-   <td><strong></strong>
-   </td>
-  </tr>
-  <tr>
-   <td>[Extend an existing data model](#task-extend-an-existing-data-model)
-   </td>
-   <td>UC1
-   </td>
-  </tr>
-  <tr>
-   <td>Updating the UML data model
-   </td>
-   <td>UC2
-   </td>
-  </tr>
-  <tr>
-   <td>Managing Persistent URIs
-   </td>
-   <td>UC3
-   </td>
-  </tr>
-  <tr>
-   <td>Editing HTML specifications
-   </td>
-   <td>UC4, UC5, UC6
-   </td>
-  </tr>
-  <tr>
-   <td>Deploy new software releases
-   </td>
-   <td>UC7
-   </td>
-  </tr>
-  <tr>
-   <td>Customise the publication process
-   </td>
-   <td>UC8, UC9
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >Table 1: Publication workflow tasks and use cases
-   </td>
-  </tr>
-</table>
-
+| [Extend an existing data model](#task-extend-an-existing-data-model)  | [UC1](#uc1-create-a-new-core-person) |
+| [Updating the UML data model](#task-updating-the-uml-data-model)  | [UC2](#uc2-adding-a-new-property-in-an-existing-class)  |
+| [Managing Persistent URIs](#task-managing-persistent-uris)  | [UC3](#uc3-create-a-persistent-uri-for-a-new-property)  |
+| [Editing HTML specifications](#task-editing-html-specifications) | [UC4](#uc4-update-the-publication-metadata-of-the-specification) , [UC5](#uc5-adding-a-changelog-section-in-the-specification) , [UC6]()    |
+| [Deploy new software releases](#task-deploy-new-software-releases)  | [UC7](#uc7-activate-a-new-release-of-transformation-software-in-the-toolchain)   |
+| [Customise the publication process](#task-customise-the-publication-process)  | [UC8](#uc8-using-circleci-to-build-data-specifications) , [UC9](#uc9-initiating-a-new-semic-thema-repository)  |
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 

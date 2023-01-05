@@ -1011,81 +1011,32 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 <tbody data-line="39" class="code-line" dir="auto">
 <tr data-line="39" class="code-line" dir="auto">
 <td><a href="#task-extend-an-existing-data-model" data-href="#task-extend-an-existing-data-model">Extend an existing data model</a></td>
-<td>UC1</td>
+<td><a href="#uc1-create-a-new-core-person" data-href="#uc1-create-a-new-core-person">UC1</a></td>
 </tr>
 <tr data-line="40" class="code-line" dir="auto">
-<td></td>
-<td></td>
+<td><a href="#task-updating-the-uml-data-model" data-href="#task-updating-the-uml-data-model">Updating the UML data model</a></td>
+<td><a href="#uc2-adding-a-new-property-in-an-existing-class" data-href="#uc2-adding-a-new-property-in-an-existing-class">UC2</a></td>
 </tr>
 <tr data-line="41" class="code-line" dir="auto">
-<td></td>
-<td></td>
+<td><a href="#task-managing-persistent-uris" data-href="#task-managing-persistent-uris">Managing Persistent URIs</a></td>
+<td><a href="#uc3-create-a-persistent-uri-for-a-new-property" data-href="#uc3-create-a-persistent-uri-for-a-new-property">UC3</a></td>
 </tr>
 <tr data-line="42" class="code-line" dir="auto">
-<td></td>
-<td></td>
+<td><a href="#task-editing-html-specifications" data-href="#task-editing-html-specifications">Editing HTML specifications</a></td>
+<td><a href="#uc4-update-the-publication-metadata-of-the-specification" data-href="#uc4-update-the-publication-metadata-of-the-specification">UC4</a> , <a href="#uc5-adding-a-changelog-section-in-the-specification" data-href="#uc5-adding-a-changelog-section-in-the-specification">UC5</a> , <a href="" data-href="">UC6</a></td>
 </tr>
 <tr data-line="43" class="code-line" dir="auto">
-<td></td>
-<td></td>
+<td><a href="#task-deploy-new-software-releases" data-href="#task-deploy-new-software-releases">Deploy new software releases</a></td>
+<td><a href="#uc7-activate-a-new-release-of-transformation-software-in-the-toolchain" data-href="#uc7-activate-a-new-release-of-transformation-software-in-the-toolchain">UC7</a></td>
 </tr>
 <tr data-line="44" class="code-line" dir="auto">
-<td></td>
-<td></td>
+<td><a href="#task-customise-the-publication-process" data-href="#task-customise-the-publication-process">Customise the publication process</a></td>
+<td><a href="#uc8-using-circleci-to-build-data-specifications" data-href="#uc8-using-circleci-to-build-data-specifications">UC8</a> , <a href="#uc9-initiating-a-new-semic-thema-repository" data-href="#uc9-initiating-a-new-semic-thema-repository">UC9</a></td>
 </tr>
 </tbody>
 </table>
-<div data-line="46" class="code-line" dir="auto"></div>
-<table>
-  <tbody><tr>
-   <td><strong>Task</strong>
-   </td>
-   <td><strong></strong>
-   </td>
-  </tr>
-  <tr>
-   <td>[Extend an existing data model](#task-extend-an-existing-data-model)
-   </td>
-   <td>UC1
-   </td>
-  </tr>
-  <tr>
-   <td>Updating the UML data model
-   </td>
-   <td>UC2
-   </td>
-  </tr>
-  <tr>
-   <td>Managing Persistent URIs
-   </td>
-   <td>UC3
-   </td>
-  </tr>
-  <tr>
-   <td>Editing HTML specifications
-   </td>
-   <td>UC4, UC5, UC6
-   </td>
-  </tr>
-  <tr>
-   <td>Deploy new software releases
-   </td>
-   <td>UC7
-   </td>
-  </tr>
-  <tr>
-   <td>Customise the publication process
-   </td>
-   <td>UC8, UC9
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2">Table 1: Publication workflow tasks and use cases
-   </td>
-  </tr>
-</tbody></table>
-<p data-line="96" class="code-line" dir="auto">The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table:</p>
-<div data-line="99" class="code-line" dir="auto"></div>
+<p data-line="46" class="code-line" dir="auto">The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table:</p>
+<div data-line="49" class="code-line" dir="auto"></div>
 <table>
   <tbody><tr>
    <td><strong>Repository</strong>
@@ -1098,13 +1049,13 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
    <td>This repository mainly contains:
 <ul>
-<div data-line="112" class="code-line" dir="auto"></div>
+<div data-line="62" class="code-line" dir="auto"></div>
 <li>EAP files, to be opened by Enterprise Architect to change the data models
-<div data-line="114" class="code-line" dir="auto"></div>
+<div data-line="64" class="code-line" dir="auto"></div>
 </li><li>The template folder, including templates, per language, to change the specific layout of HTML specification
-<div data-line="116" class="code-line" dir="auto"></div>
+<div data-line="66" class="code-line" dir="auto"></div>
 </li><li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification
-<div data-line="118" class="code-line" dir="auto"></div>
+<div data-line="68" class="code-line" dir="auto"></div>
 </li><li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process
 </li>
 </ul>
@@ -1115,11 +1066,11 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
    <td>This repository mainly contains:
 <ul>
-<div data-line="129" class="code-line" dir="auto"></div>
+<div data-line="79" class="code-line" dir="auto"></div>
 <li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository
-<div data-line="131" class="code-line" dir="auto"></div>
+<div data-line="81" class="code-line" dir="auto"></div>
 </li><li>The config folder, including the main JSON publication file under the config/dev folder 
-<div data-line="133" class="code-line" dir="auto"></div>
+<div data-line="83" class="code-line" dir="auto"></div>
 </li><li>.circleci folder, including the configuration file of the CircleCI pipeline
 </li>
 </ul>
@@ -1130,9 +1081,9 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
    <td>This repository mainly contains:
 <ul>
-<div data-line="144" class="code-line" dir="auto"></div>
+<div data-line="94" class="code-line" dir="auto"></div>
 <li>The report folder which contains the logs of the execution of the CircleCI pipeline
-<div data-line="146" class="code-line" dir="auto"></div>
+<div data-line="96" class="code-line" dir="auto"></div>
 </li><li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD
 </li>
 </ul>
@@ -1143,7 +1094,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
    <td>This repository mainly contains:
 <ul>
-<div data-line="157" class="code-line" dir="auto"></div>
+<div data-line="107" class="code-line" dir="auto"></div>
 <li>The release folder which contains, for each namespace, the RDF associated the respective URI
 </li>
 </ul>
@@ -1154,7 +1105,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
    <td>This repository mainly contains:
 <ul>
-<div data-line="168" class="code-line" dir="auto"></div>
+<div data-line="118" class="code-line" dir="auto"></div>
 <li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection
 </li>
 </ul>
@@ -1165,8 +1116,8 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
   </tr>
 </tbody></table>
-<p data-line="180" class="code-line" dir="auto">In <a href="#bookmark=id.n252uta6c46t" data-href="#bookmark=id.n252uta6c46t">Table 3</a> the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:</p>
-<div data-line="183" class="code-line" dir="auto"></div>
+<p data-line="130" class="code-line" dir="auto">In <a href="#bookmark=id.n252uta6c46t" data-href="#bookmark=id.n252uta6c46t">Table 3</a> the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:</p>
+<div data-line="133" class="code-line" dir="auto"></div>
 <table>
   <tbody><tr>
    <td><strong>Repositories / roles / tools</strong>
@@ -1547,45 +1498,45 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
    </td>
   </tr>
 </tbody></table>
-<p data-line="565" class="code-line" dir="auto">As can be seen, most of the time the editor will use mainly the SEMIC thema, publication and generated repository for its operations. The editor and toolchain developer collaborate on UC3 to create and enable persistent URI’s and in UC9 to create a new SEMIC thema repository.</p>
-<h2 data-line="568" class="code-line" dir="auto" id="" tabindex="-1"></h2>
-<h1 data-line="571" class="code-line" dir="auto" id="tasks-execution" tabindex="-1">Tasks Execution</h1>
-<p data-line="573" class="code-line" dir="auto">In order to execute the task described in this section, the reader is referred to the existing SEMIC data specification <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary" data-href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary">Core Person</a>. In this section, the first tasks in the editorial and publication process are described using mainly <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary" data-href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary">Core Person</a> while the last tasks, covered by UC7, UC8 and UC9, focus on customising the publication process.</p>
-<h2 data-line="576" class="code-line" dir="auto" id="task-extend-an-existing-data-model" tabindex="-1">Task: Extend an existing data model</h2>
-<h3 data-line="579" class="code-line" dir="auto" id="uc1-create-a-new-core-person" tabindex="-1">UC1: Create a new Core Person</h3>
-<p data-line="581" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="583" class="code-line" dir="auto">Setup a new custom data specification from an existing one in order to add new properties (UC2), create its own URI (UC3), edit metadata (UC4), update sections (UC5) and change the style of the specification (UC6). As an example in this use case, the objective is to create a copy of the existing Core Person and reuse as much as possible the current configuration.</p>
-<p data-line="585" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="589" class="code-line" dir="auto">
-<li data-line="589" class="code-line" dir="auto">An editor that needs to create a new specification</li>
+<p data-line="515" class="code-line" dir="auto">As can be seen, most of the time the editor will use mainly the SEMIC thema, publication and generated repository for its operations. The editor and toolchain developer collaborate on UC3 to create and enable persistent URI’s and in UC9 to create a new SEMIC thema repository.</p>
+<h2 data-line="518" class="code-line" dir="auto" id="" tabindex="-1"></h2>
+<h1 data-line="521" class="code-line" dir="auto" id="tasks-execution" tabindex="-1">Tasks Execution</h1>
+<p data-line="523" class="code-line" dir="auto">In order to execute the task described in this section, the reader is referred to the existing SEMIC data specification <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary" data-href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary">Core Person</a>. In this section, the first tasks in the editorial and publication process are described using mainly <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary" data-href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary">Core Person</a> while the last tasks, covered by UC7, UC8 and UC9, focus on customising the publication process.</p>
+<h2 data-line="526" class="code-line" dir="auto" id="task-extend-an-existing-data-model" tabindex="-1">Task: Extend an existing data model</h2>
+<h3 data-line="529" class="code-line" dir="auto" id="uc1-create-a-new-core-person" tabindex="-1">UC1: Create a new Core Person</h3>
+<p data-line="531" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="533" class="code-line" dir="auto">Setup a new custom data specification from an existing one in order to add new properties (UC2), create its own URI (UC3), edit metadata (UC4), update sections (UC5) and change the style of the specification (UC6). As an example in this use case, the objective is to create a copy of the existing Core Person and reuse as much as possible the current configuration.</p>
+<p data-line="535" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="539" class="code-line" dir="auto">
+<li data-line="539" class="code-line" dir="auto">An editor that needs to create a new specification</li>
 </ul>
-<p data-line="591" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="595" class="code-line" dir="auto">
-<li data-line="595" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="596" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
+<p data-line="541" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="545" class="code-line" dir="auto">
+<li data-line="545" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="546" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
 </ul>
-<p data-line="598" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="602" class="code-line" dir="auto">
-<li data-line="602" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file and the EAP file</li>
-<li data-line="603" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
-<li data-line="604" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
+<p data-line="548" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="552" class="code-line" dir="auto">
+<li data-line="552" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file and the EAP file</li>
+<li data-line="553" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
+<li data-line="554" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
 </ul>
-<p data-line="606" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="610" class="code-line" dir="auto">
-<li data-line="610" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="611" class="code-line" dir="auto">A text editor, to edit configuration files</li>
+<p data-line="556" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="560" class="code-line" dir="auto">
+<li data-line="560" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="561" class="code-line" dir="auto">A text editor, to edit configuration files</li>
 </ul>
-<p data-line="613" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol data-line="617" class="code-line" dir="auto">
-<li data-line="617" class="code-line" dir="auto">
-<p data-line="617" class="code-line" dir="auto">Pull the latest code from the SEMIC thema, publication and generated repository</p>
+<p data-line="563" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol data-line="567" class="code-line" dir="auto">
+<li data-line="567" class="code-line" dir="auto">
+<p data-line="567" class="code-line" dir="auto">Pull the latest code from the SEMIC thema, publication and generated repository</p>
 </li>
-<li data-line="618" class="code-line" dir="auto">
-<p data-line="618" class="code-line" dir="auto">In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):</p>
-<pre><code data-line="620" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="568" class="code-line" dir="auto">
+<p data-line="568" class="code-line" dir="auto">In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):</p>
+<pre><code data-line="570" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="621" class="code-line" dir="auto">,{
+<p data-line="571" class="code-line" dir="auto">,{
 "dummy": "1",
 "urlref": "/doc/core-vocabulary/core-person-test",
 "repository": "git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git",
@@ -1594,7 +1545,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 "filename": "config/core-person-test.json",
 "navigation": {}
 }</p>
-<pre><code data-line="630" class="code-line" dir="auto"><code><div>
+<pre><code data-line="580" class="code-line" dir="auto"><code><div>
 
 
     Notice the “,” character before to concatenate with the previous section and save the file.
@@ -1605,95 +1556,95 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
     ```
 "eap": "CorePerson-test.EAP",
 </div></code></code></pre>
-<pre data-line="645" class="code-line" dir="auto"><code>Be careful to keep a  “,” at the end to concatenate with the next section and save the file.
+<pre data-line="595" class="code-line" dir="auto"><code>Be careful to keep a  “,” at the end to concatenate with the next section and save the file.
 </code></pre>
-<ol start="5" data-line="647" class="code-line" dir="auto">
-<li data-line="647" class="code-line" dir="auto">Now let’s duplicate CorePerson2.EAP by creating a copy named CorePerson-test.EAP</li>
-<li data-line="648" class="code-line" dir="auto">Commit and push in the SEMIC thema repository and after in the SEMIC publication repository.</li>
+<ol start="5" data-line="597" class="code-line" dir="auto">
+<li data-line="597" class="code-line" dir="auto">Now let’s duplicate CorePerson2.EAP by creating a copy named CorePerson-test.EAP</li>
+<li data-line="598" class="code-line" dir="auto">Commit and push in the SEMIC thema repository and after in the SEMIC publication repository.</li>
 </ol>
-<p data-line="650" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="652" class="code-line" dir="auto">Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder (as indicated in the publication.json file) including:</p>
-<ul data-line="656" class="code-line" dir="auto">
-<li data-line="656" class="code-line" dir="auto">index.html and index_en.html</li>
-<li data-line="657" class="code-line" dir="auto">A “context” folder containing the JSON-LD context files</li>
-<li data-line="658" class="code-line" dir="auto">A “html” folder containing the overview.jpg and semic-icon.png</li>
-<li data-line="659" class="code-line" dir="auto">A “shacl” folder containing the SHACL shape files in turtle and JSON-LD</li>
-<li data-line="660" class="code-line" dir="auto">A “xsd” folder containing the XML schema files</li>
+<p data-line="600" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="602" class="code-line" dir="auto">Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder (as indicated in the publication.json file) including:</p>
+<ul data-line="606" class="code-line" dir="auto">
+<li data-line="606" class="code-line" dir="auto">index.html and index_en.html</li>
+<li data-line="607" class="code-line" dir="auto">A “context” folder containing the JSON-LD context files</li>
+<li data-line="608" class="code-line" dir="auto">A “html” folder containing the overview.jpg and semic-icon.png</li>
+<li data-line="609" class="code-line" dir="auto">A “shacl” folder containing the SHACL shape files in turtle and JSON-LD</li>
+<li data-line="610" class="code-line" dir="auto">A “xsd” folder containing the XML schema files</li>
 </ul>
-<h2 data-line="663" class="code-line" dir="auto" id="task-updating-the-uml-data-model" tabindex="-1">Task: Updating the UML data model</h2>
-<h3 data-line="666" class="code-line" dir="auto" id="uc2-adding-a-new-property-in-an-existing-class" tabindex="-1">UC2: Adding a new property in an existing class</h3>
-<p data-line="668" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="670" class="code-line" dir="auto">In the Core Person Test, there is a need to add “baptismal name” property within the Person class. It has been decided to:</p>
-<ul data-line="674" class="code-line" dir="auto">
-<li data-line="674" class="code-line" dir="auto">use the UML attribute “baptsimalName”</li>
-<li data-line="675" class="code-line" dir="auto">use the type Text</li>
-<li data-line="676" class="code-line" dir="auto">use the multiplicity “0..*”</li>
-<li data-line="677" class="code-line" dir="auto">use the English label “baptismal name”</li>
-<li data-line="678" class="code-line" dir="auto">use the English definition “the name given by Christians”</li>
-<li data-line="679" class="code-line" dir="auto">define a new URI: <a href="http://data.europa.eu/m8g/baptismalName" data-href="http://data.europa.eu/m8g/baptismalName">http://data.europa.eu/m8g/baptismalName</a></li>
+<h2 data-line="613" class="code-line" dir="auto" id="task-updating-the-uml-data-model" tabindex="-1">Task: Updating the UML data model</h2>
+<h3 data-line="616" class="code-line" dir="auto" id="uc2-adding-a-new-property-in-an-existing-class" tabindex="-1">UC2: Adding a new property in an existing class</h3>
+<p data-line="618" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="620" class="code-line" dir="auto">In the Core Person Test, there is a need to add “baptismal name” property within the Person class. It has been decided to:</p>
+<ul data-line="624" class="code-line" dir="auto">
+<li data-line="624" class="code-line" dir="auto">use the UML attribute “baptsimalName”</li>
+<li data-line="625" class="code-line" dir="auto">use the type Text</li>
+<li data-line="626" class="code-line" dir="auto">use the multiplicity “0..*”</li>
+<li data-line="627" class="code-line" dir="auto">use the English label “baptismal name”</li>
+<li data-line="628" class="code-line" dir="auto">use the English definition “the name given by Christians”</li>
+<li data-line="629" class="code-line" dir="auto">define a new URI: <a href="http://data.europa.eu/m8g/baptismalName" data-href="http://data.europa.eu/m8g/baptismalName">http://data.europa.eu/m8g/baptismalName</a></li>
 </ul>
-<p data-line="681" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="685" class="code-line" dir="auto">
-<li data-line="685" class="code-line" dir="auto">An editor that needs to add a new property in the model</li>
+<p data-line="631" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="635" class="code-line" dir="auto">
+<li data-line="635" class="code-line" dir="auto">An editor that needs to add a new property in the model</li>
 </ul>
-<p data-line="687" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="691" class="code-line" dir="auto">
-<li data-line="691" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="692" class="code-line" dir="auto">UML modelling and semantic model, see the <a href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md" data-href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md">Data model</a> section</li>
-<li data-line="693" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
-<li data-line="694" class="code-line" dir="auto">Be able to understand a RDF file such as JSON-LD context and SHACL shapes</li>
+<p data-line="637" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="641" class="code-line" dir="auto">
+<li data-line="641" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="642" class="code-line" dir="auto">UML modelling and semantic model, see the <a href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md" data-href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md">Data model</a> section</li>
+<li data-line="643" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
+<li data-line="644" class="code-line" dir="auto">Be able to understand a RDF file such as JSON-LD context and SHACL shapes</li>
 </ul>
-<p data-line="696" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="700" class="code-line" dir="auto">
-<li data-line="700" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file, the EAP file and site-skeleton folder</li>
-<li data-line="701" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
-<li data-line="702" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
+<p data-line="646" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="650" class="code-line" dir="auto">
+<li data-line="650" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file, the EAP file and site-skeleton folder</li>
+<li data-line="651" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
+<li data-line="652" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
 </ul>
-<p data-line="704" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="708" class="code-line" dir="auto">
-<li data-line="708" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="709" class="code-line" dir="auto">Enterprise Architect to apply changes to the UML class diagram</li>
-<li data-line="710" class="code-line" dir="auto">A text editor, to edit configuration file and to test that the generated artefacts (JSON-LD context and SHACL shapes) have been updated correctly</li>
-<li data-line="711" class="code-line" dir="auto">A web browser, to test that the generated HTML specification has been updated correctly</li>
+<p data-line="654" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="658" class="code-line" dir="auto">
+<li data-line="658" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="659" class="code-line" dir="auto">Enterprise Architect to apply changes to the UML class diagram</li>
+<li data-line="660" class="code-line" dir="auto">A text editor, to edit configuration file and to test that the generated artefacts (JSON-LD context and SHACL shapes) have been updated correctly</li>
+<li data-line="661" class="code-line" dir="auto">A web browser, to test that the generated HTML specification has been updated correctly</li>
 </ul>
-<p data-line="713" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol data-line="717" class="code-line" dir="auto">
-<li data-line="717" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</li>
-<li data-line="718" class="code-line" dir="auto">Open the CorePerson-test.EAP file with Enterprise Architect</li>
-<li data-line="719" class="code-line" dir="auto">In “Project Browser” ribbon, expand the Core Person package, double click on the diagram called “Core_Person_publication”, select the class Person</li>
-<li data-line="720" class="code-line" dir="auto">In the “Feature &amp; Properties” ribbon add new attribute with Name “baptsimalName”</li>
-<li data-line="721" class="code-line" dir="auto">Next define the Type “Text” to be selected from the drop-down menu “Select Type…” under “Core Vocabulary” package</li>
-<li data-line="722" class="code-line" dir="auto">Select the Scope “Public”</li>
+<p data-line="663" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol data-line="667" class="code-line" dir="auto">
+<li data-line="667" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</li>
+<li data-line="668" class="code-line" dir="auto">Open the CorePerson-test.EAP file with Enterprise Architect</li>
+<li data-line="669" class="code-line" dir="auto">In “Project Browser” ribbon, expand the Core Person package, double click on the diagram called “Core_Person_publication”, select the class Person</li>
+<li data-line="670" class="code-line" dir="auto">In the “Feature &amp; Properties” ribbon add new attribute with Name “baptsimalName”</li>
+<li data-line="671" class="code-line" dir="auto">Next define the Type “Text” to be selected from the drop-down menu “Select Type…” under “Core Vocabulary” package</li>
+<li data-line="672" class="code-line" dir="auto">Select the Scope “Public”</li>
 </ol>
-<div data-line="726" class="code-line" dir="auto"></div>
+<div data-line="676" class="code-line" dir="auto"></div>
 <p id="gdcalert1"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="729" class="code-line" dir="auto"><img src="images/image1.png" alt="alt_text" title="image_tooltip" data-src="images/image1.png"></p>
-<ol start="7" data-line="732" class="code-line" dir="auto">
-<li data-line="732" class="code-line" dir="auto">In the “Attribute Properties” ribbon, look for the Multiplicity property and select the default value “[1]”, double click on it and select Lower bound to 0 and Upper bound *, click OK</li>
+<p data-line="679" class="code-line" dir="auto"><img src="images/image1.png" alt="alt_text" title="image_tooltip" data-src="images/image1.png"></p>
+<ol start="7" data-line="682" class="code-line" dir="auto">
+<li data-line="682" class="code-line" dir="auto">In the “Attribute Properties” ribbon, look for the Multiplicity property and select the default value “[1]”, double click on it and select Lower bound to 0 and Upper bound *, click OK</li>
 </ol>
-<div data-line="736" class="code-line" dir="auto"></div>
+<div data-line="686" class="code-line" dir="auto"></div>
 <p id="gdcalert2"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="739" class="code-line" dir="auto"><img src="images/image2.png" alt="alt_text" title="image_tooltip" data-src="images/image2.png"></p>
-<ol start="8" data-line="742" class="code-line" dir="auto">
-<li data-line="742" class="code-line" dir="auto">In the “Tagged Values” ribbon, select the now empty “Attribute (baptsimalName)” section, click on “Add new tagged value” icon, in Tag type “label-en” with Value “baptismal name”, click OK</li>
+<p data-line="689" class="code-line" dir="auto"><img src="images/image2.png" alt="alt_text" title="image_tooltip" data-src="images/image2.png"></p>
+<ol start="8" data-line="692" class="code-line" dir="auto">
+<li data-line="692" class="code-line" dir="auto">In the “Tagged Values” ribbon, select the now empty “Attribute (baptsimalName)” section, click on “Add new tagged value” icon, in Tag type “label-en” with Value “baptismal name”, click OK</li>
 </ol>
-<div data-line="746" class="code-line" dir="auto"></div>
+<div data-line="696" class="code-line" dir="auto"></div>
 <p id="gdcalert3"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="749" class="code-line" dir="auto"><img src="images/image3.png" alt="alt_text" title="image_tooltip" data-src="images/image3.png"></p>
-<ol start="9" data-line="752" class="code-line" dir="auto">
-<li data-line="752" class="code-line" dir="auto">
-<p data-line="752" class="code-line" dir="auto">Click again on “Add new tagged value” icon, in Tag type “definition-en” with Value “the name given by Christians”, click OK</p>
+<p data-line="699" class="code-line" dir="auto"><img src="images/image3.png" alt="alt_text" title="image_tooltip" data-src="images/image3.png"></p>
+<ol start="9" data-line="702" class="code-line" dir="auto">
+<li data-line="702" class="code-line" dir="auto">
+<p data-line="702" class="code-line" dir="auto">Click again on “Add new tagged value” icon, in Tag type “definition-en” with Value “the name given by Christians”, click OK</p>
 </li>
-<li data-line="753" class="code-line" dir="auto">
-<p data-line="753" class="code-line" dir="auto">Click again on “Add new tagged value” icon, in Tag type “uri” with Value “<a href="http://data.europa.eu/m8g/baptismalName”" data-href="http://data.europa.eu/m8g/baptismalName”">http://data.europa.eu/m8g/baptismalName”</a>, click OK</p>
+<li data-line="703" class="code-line" dir="auto">
+<p data-line="703" class="code-line" dir="auto">Click again on “Add new tagged value” icon, in Tag type “uri” with Value “<a href="http://data.europa.eu/m8g/baptismalName”" data-href="http://data.europa.eu/m8g/baptismalName”">http://data.europa.eu/m8g/baptismalName”</a>, click OK</p>
 </li>
-<li data-line="754" class="code-line" dir="auto">
-<p data-line="754" class="code-line" dir="auto">As the UML diagram changed but we reuse the same folder of the original Core Person, we change the core-person-test.json file and modify just the “site” property to</p>
-<pre><code data-line="756" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="704" class="code-line" dir="auto">
+<p data-line="704" class="code-line" dir="auto">As the UML diagram changed but we reuse the same folder of the original Core Person, we change the core-person-test.json file and modify just the “site” property to</p>
+<pre><code data-line="706" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="757" class="code-line" dir="auto">"site": "site-skeleton/core-person-test",</p>
-<pre><code data-line="758" class="code-line" dir="auto"><code><div>
+<p data-line="707" class="code-line" dir="auto">"site": "site-skeleton/core-person-test",</p>
+<pre><code data-line="708" class="code-line" dir="auto"><code><div>
 
 
     and save the file.
@@ -1706,83 +1657,83 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
     ```
 "dummy": "2",
 </div></code></code></pre>
-<pre data-line="775" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
+<pre data-line="725" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
 </code></pre>
-<p data-line="778" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="780" class="code-line" dir="auto">Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including:</p>
-<ul data-line="784" class="code-line" dir="auto">
-<li data-line="784" class="code-line" dir="auto">The image “overview.jpg”, located in the html folder and linked from the index.html, has been updated including the new property</li>
-<li data-line="785" class="code-line" dir="auto">The new property appears under the Person class section in the index.html file, with the respective label, definition and multiplicity</li>
+<p data-line="728" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="730" class="code-line" dir="auto">Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including:</p>
+<ul data-line="734" class="code-line" dir="auto">
+<li data-line="734" class="code-line" dir="auto">The image “overview.jpg”, located in the html folder and linked from the index.html, has been updated including the new property</li>
+<li data-line="735" class="code-line" dir="auto">The new property appears under the Person class section in the index.html file, with the respective label, definition and multiplicity</li>
 </ul>
-<div data-line="789" class="code-line" dir="auto"></div>
+<div data-line="739" class="code-line" dir="auto"></div>
 <p id="gdcalert4"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="792" class="code-line" dir="auto"><img src="images/image4.png" alt="alt_text" title="image_tooltip" data-src="images/image4.png"></p>
-<ul data-line="795" class="code-line" dir="auto">
-<li data-line="795" class="code-line" dir="auto">The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.)</li>
+<p data-line="742" class="code-line" dir="auto"><img src="images/image4.png" alt="alt_text" title="image_tooltip" data-src="images/image4.png"></p>
+<ul data-line="745" class="code-line" dir="auto">
+<li data-line="745" class="code-line" dir="auto">The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.)</li>
 </ul>
-<h2 data-line="798" class="code-line" dir="auto" id="task-managing-persistent-uris" tabindex="-1">Task: Managing Persistent URIs</h2>
-<h3 data-line="801" class="code-line" dir="auto" id="uc3-create-a-persistent-uri-for-a-new-property" tabindex="-1">UC3: Create a persistent URI for a new property</h3>
-<p data-line="803" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="805" class="code-line" dir="auto">Having created the new property “baptismal name” in use case UC2, there is a need to create a new persistent URI related to the property.</p>
-<p data-line="807" class="code-line" dir="auto">When a specification is officially released, the persistent URI is maintained as RDF redirection and HTML redirection, both will be setup in this use case.</p>
-<p data-line="809" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="813" class="code-line" dir="auto">
-<li data-line="813" class="code-line" dir="auto">An editor that needs to define a new persistent URI</li>
-<li data-line="814" class="code-line" dir="auto">A toolchain developer to enable the new persistent URI</li>
+<h2 data-line="748" class="code-line" dir="auto" id="task-managing-persistent-uris" tabindex="-1">Task: Managing Persistent URIs</h2>
+<h3 data-line="751" class="code-line" dir="auto" id="uc3-create-a-persistent-uri-for-a-new-property" tabindex="-1">UC3: Create a persistent URI for a new property</h3>
+<p data-line="753" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="755" class="code-line" dir="auto">Having created the new property “baptismal name” in use case UC2, there is a need to create a new persistent URI related to the property.</p>
+<p data-line="757" class="code-line" dir="auto">When a specification is officially released, the persistent URI is maintained as RDF redirection and HTML redirection, both will be setup in this use case.</p>
+<p data-line="759" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="763" class="code-line" dir="auto">
+<li data-line="763" class="code-line" dir="auto">An editor that needs to define a new persistent URI</li>
+<li data-line="764" class="code-line" dir="auto">A toolchain developer to enable the new persistent URI</li>
 </ul>
-<p data-line="816" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="820" class="code-line" dir="auto">
-<li data-line="820" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="821" class="code-line" dir="auto">Having read the <a href="https://github.com/SEMICeu/documentation/blob/main/puri.md" data-href="https://github.com/SEMICeu/documentation/blob/main/puri.md">Persistent URI documentation</a></li>
-<li data-line="822" class="code-line" dir="auto">For RDF redirection:
-<ul data-line="823" class="code-line" dir="auto">
-<li data-line="823" class="code-line" dir="auto">Be able to understand a RDF file in the formats Turtle, RDF/XML or N-Triples</li>
-</ul>
-</li>
-<li data-line="824" class="code-line" dir="auto">For HTML redirection:
-<ul data-line="825" class="code-line" dir="auto">
-<li data-line="825" class="code-line" dir="auto">Having setup the HTML specification release; in the case of SEMIC, the index.html generated in UC2 is assumed to be published on <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/" data-href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/">https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/</a> thanks to GitHub Pages</li>
+<p data-line="766" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="770" class="code-line" dir="auto">
+<li data-line="770" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="771" class="code-line" dir="auto">Having read the <a href="https://github.com/SEMICeu/documentation/blob/main/puri.md" data-href="https://github.com/SEMICeu/documentation/blob/main/puri.md">Persistent URI documentation</a></li>
+<li data-line="772" class="code-line" dir="auto">For RDF redirection:
+<ul data-line="773" class="code-line" dir="auto">
+<li data-line="773" class="code-line" dir="auto">Be able to understand a RDF file in the formats Turtle, RDF/XML or N-Triples</li>
 </ul>
 </li>
-<li data-line="826" class="code-line" dir="auto">To enable Persistent URI service:
-<ul data-line="827" class="code-line" dir="auto">
-<li data-line="827" class="code-line" dir="auto">Understand how to connect to a remote machine via SSH</li>
-<li data-line="828" class="code-line" dir="auto">Basic knowledge of Linux command line</li>
-<li data-line="829" class="code-line" dir="auto">Having setup a personal access token on its own GitHub profile that allows to pull code of GitHub via command line</li>
+<li data-line="774" class="code-line" dir="auto">For HTML redirection:
+<ul data-line="775" class="code-line" dir="auto">
+<li data-line="775" class="code-line" dir="auto">Having setup the HTML specification release; in the case of SEMIC, the index.html generated in UC2 is assumed to be published on <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/" data-href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/">https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/</a> thanks to GitHub Pages</li>
 </ul>
 </li>
-<li data-line="830" class="code-line" dir="auto">To test, basic knowledge of HTTP protocol in order to set the Accept header</li>
+<li data-line="776" class="code-line" dir="auto">To enable Persistent URI service:
+<ul data-line="777" class="code-line" dir="auto">
+<li data-line="777" class="code-line" dir="auto">Understand how to connect to a remote machine via SSH</li>
+<li data-line="778" class="code-line" dir="auto">Basic knowledge of Linux command line</li>
+<li data-line="779" class="code-line" dir="auto">Having setup a personal access token on its own GitHub profile that allows to pull code of GitHub via command line</li>
 </ul>
-<p data-line="832" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="836" class="code-line" dir="auto">
-<li data-line="836" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="837" class="code-line" dir="auto">A SSH key pair setup within to PURI service machine and a SSH Client</li>
-<li data-line="838" class="code-line" dir="auto">A text editor, to edit RDF files and configuration file</li>
-<li data-line="839" class="code-line" dir="auto">For the RDF redirection, a HTTP client that allows to send a Accept Header</li>
-<li data-line="840" class="code-line" dir="auto">For the HTML redirection, a browser that can display the HTML response</li>
+</li>
+<li data-line="780" class="code-line" dir="auto">To test, basic knowledge of HTTP protocol in order to set the Accept header</li>
 </ul>
-<p data-line="842" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol data-line="846" class="code-line" dir="auto">
-<li data-line="846" class="code-line" dir="auto">To setup the RDF redirection, pull the latest code from the SEMIC puri repository
-<ol data-line="847" class="code-line" dir="auto">
-<li data-line="847" class="code-line" dir="auto">
-<p data-line="847" class="code-line" dir="auto">Under releases/m8g folder, create 3 empty files: baptsimalName.nt, baptsimalName.rdf and baptsimalName.ttl</p>
+<p data-line="782" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="786" class="code-line" dir="auto">
+<li data-line="786" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="787" class="code-line" dir="auto">A SSH key pair setup within to PURI service machine and a SSH Client</li>
+<li data-line="788" class="code-line" dir="auto">A text editor, to edit RDF files and configuration file</li>
+<li data-line="789" class="code-line" dir="auto">For the RDF redirection, a HTTP client that allows to send a Accept Header</li>
+<li data-line="790" class="code-line" dir="auto">For the HTML redirection, a browser that can display the HTML response</li>
+</ul>
+<p data-line="792" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol data-line="796" class="code-line" dir="auto">
+<li data-line="796" class="code-line" dir="auto">To setup the RDF redirection, pull the latest code from the SEMIC puri repository
+<ol data-line="797" class="code-line" dir="auto">
+<li data-line="797" class="code-line" dir="auto">
+<p data-line="797" class="code-line" dir="auto">Under releases/m8g folder, create 3 empty files: baptsimalName.nt, baptsimalName.rdf and baptsimalName.ttl</p>
 </li>
-<li data-line="848" class="code-line" dir="auto">
-<p data-line="848" class="code-line" dir="auto">Open with a text editor the baptsimalName.ttl and type the following:</p>
-<pre><code data-line="850" class="code-line" dir="auto"><code><div></div></code></code></pre>
-</li>
-</ol>
+<li data-line="798" class="code-line" dir="auto">
+<p data-line="798" class="code-line" dir="auto">Open with a text editor the baptsimalName.ttl and type the following:</p>
+<pre><code data-line="800" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="851" class="code-line" dir="auto">@prefix rdf: <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" data-href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a> .</p>
-<p data-line="853" class="code-line" dir="auto"><a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>
+</li>
+</ol>
+<p data-line="801" class="code-line" dir="auto">@prefix rdf: <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" data-href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a> .</p>
+<p data-line="803" class="code-line" dir="auto"><a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>
 a rdf:Property, <a href="http://www.w3.org/2002/07/owl#DatatypeProperty" data-href="http://www.w3.org/2002/07/owl#DatatypeProperty">http://www.w3.org/2002/07/owl#DatatypeProperty</a> ;
 <a href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" data-href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">http://www.w3.org/2000/01/rdf-schema#isDefinedBy</a><br>
 <a href="http://data.europa.eu/m8g" data-href="http://data.europa.eu/m8g">http://data.europa.eu/m8g</a> ;
 <a href="http://www.w3.org/2004/02/skos/core#scopeNote" data-href="http://www.w3.org/2004/02/skos/core#scopeNote">http://www.w3.org/2004/02/skos/core#scopeNote</a> "the name given by Christians."@en ;
 <a href="http://www.w3.org/2000/01/rdf-schema#label" data-href="http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a> "baptsimal name"@en .</p>
-<pre><code data-line="859" class="code-line" dir="auto"><code><div>
+<pre><code data-line="809" class="code-line" dir="auto"><code><div>
 
 
     And save the file.
@@ -1795,7 +1746,7 @@ a rdf:Property, <a href="http://www.w3.org/2002/07/owl#DatatypeProperty" data-hr
         ```
 ["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
 </div></code></code></pre>
-<pre data-line="876" class="code-line" dir="auto"><code>and save the file.
+<pre data-line="826" class="code-line" dir="auto"><code>and save the file.
 
 
 Be careful to add a “,” character at the end of the previous line so the properties can be correctly read.
@@ -1805,10 +1756,10 @@ Notice the last part of the line “Person%3Abaptismal%20name”, this is the HT
 
 6. Commit and push the changes to the SEMIC proxy repository
 </code></pre>
-<ol start="3" data-line="885" class="code-line" dir="auto">
-<li data-line="885" class="code-line" dir="auto">The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:</li>
+<ol start="3" data-line="835" class="code-line" dir="auto">
+<li data-line="835" class="code-line" dir="auto">The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:</li>
 </ol>
-<div data-line="887" class="code-line" dir="auto"></div>
+<div data-line="837" class="code-line" dir="auto"></div>
 <table>
   <tbody><tr>
    <td>
@@ -1842,67 +1793,67 @@ Notice the last part of the line “Person%3Abaptismal%20name”, this is the HT
    </td>
   </tr>
 </tbody></table>
-<p data-line="922" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<ul data-line="926" class="code-line" dir="auto">
-<li data-line="926" class="code-line" dir="auto">For the RDF redirection, open the HTTP client and create a HTTP request pointing to <a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>:
-<ul data-line="927" class="code-line" dir="auto">
-<li data-line="927" class="code-line" dir="auto">by setting the Accept header to “text/turtle”, it should get an answer like in step 1.2</li>
-<li data-line="928" class="code-line" dir="auto">by setting the Accept header to “rdf/xml”, it should get an answer in RDF/XML as saved in step 1.3</li>
-<li data-line="929" class="code-line" dir="auto">By setting the Accept header to “application/n-triples”, it should get an answer in N-Triples as saved in step 1.3</li>
+<p data-line="872" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<ul data-line="876" class="code-line" dir="auto">
+<li data-line="876" class="code-line" dir="auto">For the RDF redirection, open the HTTP client and create a HTTP request pointing to <a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>:
+<ul data-line="877" class="code-line" dir="auto">
+<li data-line="877" class="code-line" dir="auto">by setting the Accept header to “text/turtle”, it should get an answer like in step 1.2</li>
+<li data-line="878" class="code-line" dir="auto">by setting the Accept header to “rdf/xml”, it should get an answer in RDF/XML as saved in step 1.3</li>
+<li data-line="879" class="code-line" dir="auto">By setting the Accept header to “application/n-triples”, it should get an answer in N-Triples as saved in step 1.3</li>
 </ul>
 </li>
 </ul>
-<div data-line="933" class="code-line" dir="auto"></div>
+<div data-line="883" class="code-line" dir="auto"></div>
 <p id="gdcalert5"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="936" class="code-line" dir="auto"><img src="images/image5.png" alt="alt_text" title="image_tooltip" data-src="images/image5.png"></p>
-<ul data-line="941" class="code-line" dir="auto">
-<li data-line="941" class="code-line" dir="auto">For the HTML redirection, open the browser or the HTTP client and point to the URL <a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>, it should get redirected to the URL specified in step 2.1, pointing to the exact HTML section of the property</li>
+<p data-line="886" class="code-line" dir="auto"><img src="images/image5.png" alt="alt_text" title="image_tooltip" data-src="images/image5.png"></p>
+<ul data-line="891" class="code-line" dir="auto">
+<li data-line="891" class="code-line" dir="auto">For the HTML redirection, open the browser or the HTTP client and point to the URL <a href="http://data.europa.eu/m8g/baptsimalName" data-href="http://data.europa.eu/m8g/baptsimalName">http://data.europa.eu/m8g/baptsimalName</a>, it should get redirected to the URL specified in step 2.1, pointing to the exact HTML section of the property</li>
 </ul>
-<h2 data-line="944" class="code-line" dir="auto" id="task-editing-html-specifications" tabindex="-1">Task: Editing HTML specifications</h2>
-<h3 data-line="947" class="code-line" dir="auto" id="uc4-update-the-publication-metadata-of-the-specification" tabindex="-1">UC4: Update the publication metadata of the specification</h3>
-<p data-line="949" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="951" class="code-line" dir="auto">There is a need to update the metadata of the specification; in order to create a draft for this new release, the following properties are going to be updated:</p>
-<ul data-line="955" class="code-line" dir="auto">
-<li data-line="955" class="code-line" dir="auto">Publication state, to be set to “SEMIC Draft”</li>
-<li data-line="956" class="code-line" dir="auto">Publication date, to be set to “2023-01-01”</li>
+<h2 data-line="894" class="code-line" dir="auto" id="task-editing-html-specifications" tabindex="-1">Task: Editing HTML specifications</h2>
+<h3 data-line="897" class="code-line" dir="auto" id="uc4-update-the-publication-metadata-of-the-specification" tabindex="-1">UC4: Update the publication metadata of the specification</h3>
+<p data-line="899" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="901" class="code-line" dir="auto">There is a need to update the metadata of the specification; in order to create a draft for this new release, the following properties are going to be updated:</p>
+<ul data-line="905" class="code-line" dir="auto">
+<li data-line="905" class="code-line" dir="auto">Publication state, to be set to “SEMIC Draft”</li>
+<li data-line="906" class="code-line" dir="auto">Publication date, to be set to “2023-01-01”</li>
 </ul>
-<p data-line="958" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="962" class="code-line" dir="auto">
-<li data-line="962" class="code-line" dir="auto">An editor that needs to update the specification</li>
+<p data-line="908" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="912" class="code-line" dir="auto">
+<li data-line="912" class="code-line" dir="auto">An editor that needs to update the specification</li>
 </ul>
-<p data-line="964" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="968" class="code-line" dir="auto">
-<li data-line="968" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="969" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
+<p data-line="914" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="918" class="code-line" dir="auto">
+<li data-line="918" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="919" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
 </ul>
-<p data-line="971" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="975" class="code-line" dir="auto">
-<li data-line="975" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file</li>
-<li data-line="976" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
-<li data-line="977" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
+<p data-line="921" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="925" class="code-line" dir="auto">
+<li data-line="925" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration file</li>
+<li data-line="926" class="code-line" dir="auto">SEMIC publication repository, to access  the JSON publication file</li>
+<li data-line="927" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
 </ul>
-<p data-line="979" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="983" class="code-line" dir="auto">
-<li data-line="983" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="984" class="code-line" dir="auto">A text editor, to edit configuration file</li>
-<li data-line="985" class="code-line" dir="auto">To test, a web browser that can display the HTML specification</li>
+<p data-line="929" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="933" class="code-line" dir="auto">
+<li data-line="933" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="934" class="code-line" dir="auto">A text editor, to edit configuration file</li>
+<li data-line="935" class="code-line" dir="auto">To test, a web browser that can display the HTML specification</li>
 </ul>
-<p data-line="987" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol data-line="991" class="code-line" dir="auto">
-<li data-line="991" class="code-line" dir="auto">
-<p data-line="991" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</p>
+<p data-line="937" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol data-line="941" class="code-line" dir="auto">
+<li data-line="941" class="code-line" dir="auto">
+<p data-line="941" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</p>
 </li>
-<li data-line="992" class="code-line" dir="auto">
-<p data-line="992" class="code-line" dir="auto">Open with a text editor the core-person-test.json under the config property</p>
+<li data-line="942" class="code-line" dir="auto">
+<p data-line="942" class="code-line" dir="auto">Open with a text editor the core-person-test.json under the config property</p>
 </li>
-<li data-line="993" class="code-line" dir="auto">
-<p data-line="993" class="code-line" dir="auto">Change the respective lines:</p>
-<pre><code data-line="995" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="943" class="code-line" dir="auto">
+<p data-line="943" class="code-line" dir="auto">Change the respective lines:</p>
+<pre><code data-line="945" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="996" class="code-line" dir="auto">"publication-state": "Semic Draft",
+<p data-line="946" class="code-line" dir="auto">"publication-state": "Semic Draft",
 "publication-date": "2023-01-01",</p>
-<pre><code data-line="998" class="code-line" dir="auto"><code><div>
+<pre><code data-line="948" class="code-line" dir="auto"><code><div>
 
 
     Be careful to add a “,” character after each line and save the file.
@@ -1914,54 +1865,54 @@ Notice the last part of the line “Person%3Abaptismal%20name”, this is the HT
     ```
 "dummy": "3",
 </div></code></code></pre>
-<pre data-line="1014" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
+<pre data-line="964" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
 </code></pre>
-<p data-line="1017" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="1019" class="code-line" dir="auto">Once the publication process ends, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including the index.html file.</p>
-<p data-line="1021" class="code-line" dir="auto">Open the index.html with a browser and verify that the 2 properties have been correctly updated.</p>
-<div data-line="1025" class="code-line" dir="auto"></div>
+<p data-line="967" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="969" class="code-line" dir="auto">Once the publication process ends, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including the index.html file.</p>
+<p data-line="971" class="code-line" dir="auto">Open the index.html with a browser and verify that the 2 properties have been correctly updated.</p>
+<div data-line="975" class="code-line" dir="auto"></div>
 <p id="gdcalert6"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="1028" class="code-line" dir="auto"><img src="images/image6.png" alt="alt_text" title="image_tooltip" data-src="images/image6.png"></p>
-<h3 data-line="1032" class="code-line" dir="auto" id="uc5-adding-a-changelog-section-in-the-specification" tabindex="-1">UC5: Adding a changelog section in the specification</h3>
-<p data-line="1034" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="1036" class="code-line" dir="auto">Having created a new property in UC2, there is a need to inform readers of the new specification about what has been changed via a change log. The change log will be a  custom section in the specification.</p>
-<p data-line="1038" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="1042" class="code-line" dir="auto">
-<li data-line="1042" class="code-line" dir="auto">An editor that needs to update the specification with a changelog</li>
+<p data-line="978" class="code-line" dir="auto"><img src="images/image6.png" alt="alt_text" title="image_tooltip" data-src="images/image6.png"></p>
+<h3 data-line="982" class="code-line" dir="auto" id="uc5-adding-a-changelog-section-in-the-specification" tabindex="-1">UC5: Adding a changelog section in the specification</h3>
+<p data-line="984" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="986" class="code-line" dir="auto">Having created a new property in UC2, there is a need to inform readers of the new specification about what has been changed via a change log. The change log will be a  custom section in the specification.</p>
+<p data-line="988" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="992" class="code-line" dir="auto">
+<li data-line="992" class="code-line" dir="auto">An editor that needs to update the specification with a changelog</li>
 </ul>
-<p data-line="1044" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="1048" class="code-line" dir="auto">
-<li data-line="1048" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="1049" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
-<li data-line="1050" class="code-line" dir="auto">Be able to understand the template structure</li>
+<p data-line="994" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="998" class="code-line" dir="auto">
+<li data-line="998" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="999" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
+<li data-line="1000" class="code-line" dir="auto">Be able to understand the template structure</li>
 </ul>
-<p data-line="1052" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="1056" class="code-line" dir="auto">
-<li data-line="1056" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration and the template files</li>
-<li data-line="1057" class="code-line" dir="auto">SEMIC publication repository, to access the JSON publication file</li>
-<li data-line="1058" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
+<p data-line="1002" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="1006" class="code-line" dir="auto">
+<li data-line="1006" class="code-line" dir="auto">SEMIC thema repository, to access the JSON configuration and the template files</li>
+<li data-line="1007" class="code-line" dir="auto">SEMIC publication repository, to access the JSON publication file</li>
+<li data-line="1008" class="code-line" dir="auto">SEMIC generated repository, to verify the artefact generated</li>
 </ul>
-<p data-line="1060" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="1064" class="code-line" dir="auto">
-<li data-line="1064" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="1065" class="code-line" dir="auto">A text editor, to edit configuration files</li>
-<li data-line="1066" class="code-line" dir="auto">To test, a web browser that can display the HTML specification</li>
+<p data-line="1010" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="1014" class="code-line" dir="auto">
+<li data-line="1014" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="1015" class="code-line" dir="auto">A text editor, to edit configuration files</li>
+<li data-line="1016" class="code-line" dir="auto">To test, a web browser that can display the HTML specification</li>
 </ul>
-<p data-line="1068" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol start="7" data-line="1072" class="code-line" dir="auto">
-<li data-line="1072" class="code-line" dir="auto">
-<p data-line="1072" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</p>
+<p data-line="1018" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol start="7" data-line="1022" class="code-line" dir="auto">
+<li data-line="1022" class="code-line" dir="auto">
+<p data-line="1022" class="code-line" dir="auto">Pull the latest code from the SEMIC thema repository</p>
 </li>
-<li data-line="1073" class="code-line" dir="auto">
-<p data-line="1073" class="code-line" dir="auto">Open with a text editor the core-person-test.json under the config property</p>
+<li data-line="1023" class="code-line" dir="auto">
+<p data-line="1023" class="code-line" dir="auto">Open with a text editor the core-person-test.json under the config property</p>
 </li>
-<li data-line="1074" class="code-line" dir="auto">
-<p data-line="1074" class="code-line" dir="auto">Change the following line:</p>
-<pre><code data-line="1076" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="1024" class="code-line" dir="auto">
+<p data-line="1024" class="code-line" dir="auto">Change the following line:</p>
+<pre><code data-line="1026" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="1077" class="code-line" dir="auto">"template": "core-person-ap-test_en.j2",</p>
-<pre><code data-line="1078" class="code-line" dir="auto"><code><div>
+<p data-line="1027" class="code-line" dir="auto">"template": "core-person-ap-test_en.j2",</p>
+<pre><code data-line="1028" class="code-line" dir="auto"><code><div>
 
 
     Be careful to add a “,” character at the end of the line and save the file.
@@ -1976,22 +1927,22 @@ The new property "baptsimal name" has been added.
 &lt;p&gt;
 {% endblock %}
 </div></code></code></pre>
-<pre data-line="1097" class="code-line" dir="auto"><code>Notice the {% block changelog %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.
+<pre data-line="1047" class="code-line" dir="auto"><code>Notice the {% block changelog %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.
 </code></pre>
-<ol start="12" data-line="1099" class="code-line" dir="auto">
-<li data-line="1099" class="code-line" dir="auto">
-<p data-line="1099" class="code-line" dir="auto">Commit and push the files changed in the SEMIC thema repository</p>
+<ol start="12" data-line="1049" class="code-line" dir="auto">
+<li data-line="1049" class="code-line" dir="auto">
+<p data-line="1049" class="code-line" dir="auto">Commit and push the files changed in the SEMIC thema repository</p>
 </li>
-<li data-line="1100" class="code-line" dir="auto">
-<p data-line="1100" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
+<li data-line="1050" class="code-line" dir="auto">
+<p data-line="1050" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
 </li>
-<li data-line="1101" class="code-line" dir="auto">
-<p data-line="1101" class="code-line" dir="auto">Update the publication.json file in the SEMIC publication repository by changing the dummy value to</p>
-<pre><code data-line="1103" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="1051" class="code-line" dir="auto">
+<p data-line="1051" class="code-line" dir="auto">Update the publication.json file in the SEMIC publication repository by changing the dummy value to</p>
+<pre><code data-line="1053" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="1104" class="code-line" dir="auto">"dummy": "4",</p>
-<pre><code data-line="1105" class="code-line" dir="auto"><code><div>
+<p data-line="1054" class="code-line" dir="auto">"dummy": "4",</p>
+<pre><code data-line="1055" class="code-line" dir="auto"><code><div>
 
 
     and commit and push to the SEMIC publication repository
@@ -2059,28 +2010,28 @@ In order to reflect the style of the organisation creating the new specification
     ```
 {% extends "semic_core_voc_test.j2" %}
 </div></code></code></pre>
-<div data-line="1178" class="code-line" dir="auto"></div>
+<div data-line="1128" class="code-line" dir="auto"></div>
 <p id="gdcalert8"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: Definition ↓↓ outside of definition list. Missing preceding term(s)? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="1181" class="code-line" dir="auto">:</p>
-<ol start="3" data-line="1185" class="code-line" dir="auto">
-<li data-line="1185" class="code-line" dir="auto">
-<p data-line="1185" class="code-line" dir="auto">Commit and push the files changed in the SEMIC thema repository</p>
+<p data-line="1131" class="code-line" dir="auto">:</p>
+<ol start="3" data-line="1135" class="code-line" dir="auto">
+<li data-line="1135" class="code-line" dir="auto">
+<p data-line="1135" class="code-line" dir="auto">Commit and push the files changed in the SEMIC thema repository</p>
 </li>
-<li data-line="1186" class="code-line" dir="auto">
-<p data-line="1186" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
+<li data-line="1136" class="code-line" dir="auto">
+<p data-line="1136" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
 </li>
-<li data-line="1187" class="code-line" dir="auto">
-<p data-line="1187" class="code-line" dir="auto">Go under the “templates” folder and duplicate the generic template semic_core_voc.j2 file to semic_core_voc_test.j2 file.</p>
+<li data-line="1137" class="code-line" dir="auto">
+<p data-line="1137" class="code-line" dir="auto">Go under the “templates” folder and duplicate the generic template semic_core_voc.j2 file to semic_core_voc_test.j2 file.</p>
 </li>
-<li data-line="1188" class="code-line" dir="auto">
-<p data-line="1188" class="code-line" dir="auto">Open the semic_core_voc_test.js file with a text editor and add, towards the end, the following lines:</p>
-<pre><code data-line="1190" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="1138" class="code-line" dir="auto">
+<p data-line="1138" class="code-line" dir="auto">Open the semic_core_voc_test.js file with a text editor and add, towards the end, the following lines:</p>
+<pre><code data-line="1140" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="1191" class="code-line" dir="auto">a, a:hover {
+<p data-line="1141" class="code-line" dir="auto">a, a:hover {
 color: #00cc23;
 }</p>
-<pre><code data-line="1194" class="code-line" dir="auto"><code><div>
+<pre><code data-line="1144" class="code-line" dir="auto"><code><div>
 
 
     Just before the  &amp;lt;/style&gt; tag.
@@ -2090,107 +2041,107 @@ color: #00cc23;
     ```
 "dummy": "5",
 </div></code></code></pre>
-<pre data-line="1208" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
+<pre data-line="1158" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
 </code></pre>
-<p data-line="1211" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="1213" class="code-line" dir="auto">Once the publication process ends, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including the index.html file.</p>
-<p data-line="1215" class="code-line" dir="auto">Open the index.html with a browser and verify that the colour of the hyperlinks has been correctly updated.</p>
-<div data-line="1219" class="code-line" dir="auto"></div>
+<p data-line="1161" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="1163" class="code-line" dir="auto">Once the publication process ends, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including the index.html file.</p>
+<p data-line="1165" class="code-line" dir="auto">Open the index.html with a browser and verify that the colour of the hyperlinks has been correctly updated.</p>
+<div data-line="1169" class="code-line" dir="auto"></div>
 <p id="gdcalert9"><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt;  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span></p>
-<p data-line="1222" class="code-line" dir="auto"><img src="images/image8.png" alt="alt_text" title="image_tooltip" data-src="images/image8.png"></p>
-<h2 data-line="1226" class="code-line" dir="auto" id="task-deploy-new-software-releases" tabindex="-1">Task: Deploy new software releases</h2>
-<h3 data-line="1229" class="code-line" dir="auto" id="uc7-activate-a-new-release-of-transformation-software-in-the-toolchain" tabindex="-1">UC7: Activate a new release of transformation software in the toolchain</h3>
-<p data-line="1231" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="1233" class="code-line" dir="auto">The toolchain is based upon open source software which are distributed as Docker images.</p>
-<p data-line="1235" class="code-line" dir="auto">As software evolves new versions of the software will become available. Each new version will result in a release of a new Docker image with a new version number.</p>
-<p data-line="1237" class="code-line" dir="auto">Within this use case, the objective is to change the toolchain so that it will use a new software release. We will upgrade the software that extracts the information from the UML model.</p>
-<p data-line="1239" class="code-line" dir="auto">(NOTE) How software is being developed, maintained and released is the responsibility of the software component itself. Each (open source) software component will have its own methodology, approach and lifecycle.</p>
-<p data-line="1241" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="1245" class="code-line" dir="auto">
-<li data-line="1245" class="code-line" dir="auto">A toolchain developer that wants to update the toolchain to the new release of the transformation software.</li>
+<p data-line="1172" class="code-line" dir="auto"><img src="images/image8.png" alt="alt_text" title="image_tooltip" data-src="images/image8.png"></p>
+<h2 data-line="1176" class="code-line" dir="auto" id="task-deploy-new-software-releases" tabindex="-1">Task: Deploy new software releases</h2>
+<h3 data-line="1179" class="code-line" dir="auto" id="uc7-activate-a-new-release-of-transformation-software-in-the-toolchain" tabindex="-1">UC7: Activate a new release of transformation software in the toolchain</h3>
+<p data-line="1181" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="1183" class="code-line" dir="auto">The toolchain is based upon open source software which are distributed as Docker images.</p>
+<p data-line="1185" class="code-line" dir="auto">As software evolves new versions of the software will become available. Each new version will result in a release of a new Docker image with a new version number.</p>
+<p data-line="1187" class="code-line" dir="auto">Within this use case, the objective is to change the toolchain so that it will use a new software release. We will upgrade the software that extracts the information from the UML model.</p>
+<p data-line="1189" class="code-line" dir="auto">(NOTE) How software is being developed, maintained and released is the responsibility of the software component itself. Each (open source) software component will have its own methodology, approach and lifecycle.</p>
+<p data-line="1191" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="1195" class="code-line" dir="auto">
+<li data-line="1195" class="code-line" dir="auto">A toolchain developer that wants to update the toolchain to the new release of the transformation software.</li>
 </ul>
-<p data-line="1247" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="1251" class="code-line" dir="auto">
-<li data-line="1251" class="code-line" dir="auto">How to build and run Docker container images</li>
-<li data-line="1252" class="code-line" dir="auto">Being able to read Docker container images specification (i.e. Dockerfile), and in particular understand how Docker images are interconnected with each other</li>
-<li data-line="1253" class="code-line" dir="auto">Knowledge about CI/CD and in particular of CircleCI (<a href="https://circleci.com/docs/" data-href="https://circleci.com/docs/">https://circleci.com/docs/</a>)</li>
-<li data-line="1254" class="code-line" dir="auto">A GitHub account that is connected with SEMIC publication repository and which is also registered as a CircleCI user</li>
-<li data-line="1255" class="code-line" dir="auto">A DockerHub account (<a href="https://hub.docker.com" data-href="https://hub.docker.com">https://hub.docker.com</a>) for exploring the latest version releases</li>
-<li data-line="1256" class="code-line" dir="auto">Be familiar with the YAML notation</li>
+<p data-line="1197" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="1201" class="code-line" dir="auto">
+<li data-line="1201" class="code-line" dir="auto">How to build and run Docker container images</li>
+<li data-line="1202" class="code-line" dir="auto">Being able to read Docker container images specification (i.e. Dockerfile), and in particular understand how Docker images are interconnected with each other</li>
+<li data-line="1203" class="code-line" dir="auto">Knowledge about CI/CD and in particular of CircleCI (<a href="https://circleci.com/docs/" data-href="https://circleci.com/docs/">https://circleci.com/docs/</a>)</li>
+<li data-line="1204" class="code-line" dir="auto">A GitHub account that is connected with SEMIC publication repository and which is also registered as a CircleCI user</li>
+<li data-line="1205" class="code-line" dir="auto">A DockerHub account (<a href="https://hub.docker.com" data-href="https://hub.docker.com">https://hub.docker.com</a>) for exploring the latest version releases</li>
+<li data-line="1206" class="code-line" dir="auto">Be familiar with the YAML notation</li>
 </ul>
-<p data-line="1258" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="1262" class="code-line" dir="auto">
-<li data-line="1262" class="code-line" dir="auto">SEMIC publication repository, to access  the CircleCI configuration file</li>
-<li data-line="1263" class="code-line" dir="auto">SEMIC generated repository, to verify removal of the generated examples</li>
+<p data-line="1208" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="1212" class="code-line" dir="auto">
+<li data-line="1212" class="code-line" dir="auto">SEMIC publication repository, to access  the CircleCI configuration file</li>
+<li data-line="1213" class="code-line" dir="auto">SEMIC generated repository, to verify removal of the generated examples</li>
 </ul>
-<p data-line="1265" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="1269" class="code-line" dir="auto">
-<li data-line="1269" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="1270" class="code-line" dir="auto">An text editor, to edit the CircleCI configuration</li>
-<li data-line="1271" class="code-line" dir="auto">A web browser to access CircleCI web interface (<a href="https://circleci.com" data-href="https://circleci.com">https://circleci.com</a>)</li>
-<li data-line="1272" class="code-line" dir="auto">Docker Hub (<a href="https://hub.docker.com/" data-href="https://hub.docker.com/">https://hub.docker.com/</a>) as image repository distributing the toolchain Docker images</li>
+<p data-line="1215" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="1219" class="code-line" dir="auto">
+<li data-line="1219" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="1220" class="code-line" dir="auto">An text editor, to edit the CircleCI configuration</li>
+<li data-line="1221" class="code-line" dir="auto">A web browser to access CircleCI web interface (<a href="https://circleci.com" data-href="https://circleci.com">https://circleci.com</a>)</li>
+<li data-line="1222" class="code-line" dir="auto">Docker Hub (<a href="https://hub.docker.com/" data-href="https://hub.docker.com/">https://hub.docker.com/</a>) as image repository distributing the toolchain Docker images</li>
 </ul>
-<p data-line="1274" class="code-line" dir="auto"><strong>Steps</strong></p>
-<ol data-line="1278" class="code-line" dir="auto">
-<li data-line="1278" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</li>
-<li data-line="1279" class="code-line" dir="auto">Open with the text editor the CircleCI configuration (file .circleci/config.yml)</li>
-<li data-line="1280" class="code-line" dir="auto">Find the image declaration of the software that is to be upgraded : <a href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115" data-href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115">https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115</a></li>
-<li data-line="1281" class="code-line" dir="auto">Login into DockerHub and search for the image informatievlaanderen/oslo-ea-to-rdf</li>
-<li data-line="1282" class="code-line" dir="auto">Find the tag that corresponds with the to-be deployed release, i.e. <a href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo" data-href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo">json-ld-format-m1.1.3</a></li>
-<li data-line="1283" class="code-line" dir="auto">Change in the Docker image tag at line 115 in the CircleCI configuration file to the selected release</li>
-<li data-line="1284" class="code-line" dir="auto">Commit and push the change to the SEMIC publication repository</li>
+<p data-line="1224" class="code-line" dir="auto"><strong>Steps</strong></p>
+<ol data-line="1228" class="code-line" dir="auto">
+<li data-line="1228" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</li>
+<li data-line="1229" class="code-line" dir="auto">Open with the text editor the CircleCI configuration (file .circleci/config.yml)</li>
+<li data-line="1230" class="code-line" dir="auto">Find the image declaration of the software that is to be upgraded : <a href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115" data-href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115">https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115</a></li>
+<li data-line="1231" class="code-line" dir="auto">Login into DockerHub and search for the image informatievlaanderen/oslo-ea-to-rdf</li>
+<li data-line="1232" class="code-line" dir="auto">Find the tag that corresponds with the to-be deployed release, i.e. <a href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo" data-href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo">json-ld-format-m1.1.3</a></li>
+<li data-line="1233" class="code-line" dir="auto">Change in the Docker image tag at line 115 in the CircleCI configuration file to the selected release</li>
+<li data-line="1234" class="code-line" dir="auto">Commit and push the change to the SEMIC publication repository</li>
 </ol>
-<p data-line="1286" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="1288" class="code-line" dir="auto">In the CircleCI web interface one can see the execution of the toolchain. If the Docker image was found by CircleCI, and the new release of the software had no breaking (API) changes compared to the previous version, the execution will be successful and the output visible in the SEMIC generated repository.</p>
-<p data-line="1290" class="code-line" dir="auto">Otherwise the execution will halt at the step with an error. Resolving errors can happen in numerous ways:</p>
-<ul data-line="1294" class="code-line" dir="auto">
-<li data-line="1294" class="code-line" dir="auto">by inspecting the logs in the CircleCI web interface;</li>
-<li data-line="1295" class="code-line" dir="auto">by rerunning the failed step via the CircleCI web interface with an temporary ssh connection and debugging the situation on a real execution state;</li>
-<li data-line="1296" class="code-line" dir="auto">Reverting back to the original software by resetting the Docker image tag to the original value.</li>
+<p data-line="1236" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="1238" class="code-line" dir="auto">In the CircleCI web interface one can see the execution of the toolchain. If the Docker image was found by CircleCI, and the new release of the software had no breaking (API) changes compared to the previous version, the execution will be successful and the output visible in the SEMIC generated repository.</p>
+<p data-line="1240" class="code-line" dir="auto">Otherwise the execution will halt at the step with an error. Resolving errors can happen in numerous ways:</p>
+<ul data-line="1244" class="code-line" dir="auto">
+<li data-line="1244" class="code-line" dir="auto">by inspecting the logs in the CircleCI web interface;</li>
+<li data-line="1245" class="code-line" dir="auto">by rerunning the failed step via the CircleCI web interface with an temporary ssh connection and debugging the situation on a real execution state;</li>
+<li data-line="1246" class="code-line" dir="auto">Reverting back to the original software by resetting the Docker image tag to the original value.</li>
 </ul>
-<p data-line="1298" class="code-line" dir="auto">(NOTE) Despite it may be needed to resolve an issue for one data specification, updating software releases is a global change for the toolchain. It impacts all current and future creations of data specifications specified in the SEMIC publication repository. Therefore such changes should be communicated to all editors.</p>
-<h2 data-line="1301" class="code-line" dir="auto" id="task-customise-the-publication-process" tabindex="-1">Task: Customise the publication process</h2>
-<h3 data-line="1304" class="code-line" dir="auto" id="uc8-using-circleci-to-build-data-specifications" tabindex="-1">UC8: Using CircleCI to build data specifications</h3>
-<p data-line="1306" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="1308" class="code-line" dir="auto">To automate building data specifications, the toolchain is using the CI/CD solution CircleCI.</p>
-<p data-line="1310" class="code-line" dir="auto">Consider the case that the generation of examples is not required for data specifications. Therefore, the objective is to adapt the CircleCI workflow to reflect that decision and exclude the generation of examples.</p>
-<p data-line="1312" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="1316" class="code-line" dir="auto">
-<li data-line="1316" class="code-line" dir="auto">A toolchain developer that wants to update the workflow of the toolchain</li>
+<p data-line="1248" class="code-line" dir="auto">(NOTE) Despite it may be needed to resolve an issue for one data specification, updating software releases is a global change for the toolchain. It impacts all current and future creations of data specifications specified in the SEMIC publication repository. Therefore such changes should be communicated to all editors.</p>
+<h2 data-line="1251" class="code-line" dir="auto" id="task-customise-the-publication-process" tabindex="-1">Task: Customise the publication process</h2>
+<h3 data-line="1254" class="code-line" dir="auto" id="uc8-using-circleci-to-build-data-specifications" tabindex="-1">UC8: Using CircleCI to build data specifications</h3>
+<p data-line="1256" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="1258" class="code-line" dir="auto">To automate building data specifications, the toolchain is using the CI/CD solution CircleCI.</p>
+<p data-line="1260" class="code-line" dir="auto">Consider the case that the generation of examples is not required for data specifications. Therefore, the objective is to adapt the CircleCI workflow to reflect that decision and exclude the generation of examples.</p>
+<p data-line="1262" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="1266" class="code-line" dir="auto">
+<li data-line="1266" class="code-line" dir="auto">A toolchain developer that wants to update the workflow of the toolchain</li>
 </ul>
-<p data-line="1318" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
-<ul data-line="1322" class="code-line" dir="auto">
-<li data-line="1322" class="code-line" dir="auto">Knowledge about CI/CD and in particular of <a href="https://circleci.com/docs/" data-href="https://circleci.com/docs/">CircleCI</a></li>
-<li data-line="1323" class="code-line" dir="auto">A GitHub account that is connected with SEMIC publication repository and which is also registered as a CircleCI user</li>
-<li data-line="1324" class="code-line" dir="auto">Familiarity with the YAML notation</li>
+<p data-line="1268" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
+<ul data-line="1272" class="code-line" dir="auto">
+<li data-line="1272" class="code-line" dir="auto">Knowledge about CI/CD and in particular of <a href="https://circleci.com/docs/" data-href="https://circleci.com/docs/">CircleCI</a></li>
+<li data-line="1273" class="code-line" dir="auto">A GitHub account that is connected with SEMIC publication repository and which is also registered as a CircleCI user</li>
+<li data-line="1274" class="code-line" dir="auto">Familiarity with the YAML notation</li>
 </ul>
-<p data-line="1326" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="1330" class="code-line" dir="auto">
-<li data-line="1330" class="code-line" dir="auto">SEMIC publication repository, to access the CircleCI configuration file</li>
-<li data-line="1331" class="code-line" dir="auto">SEMIC generated repository, to verify removal of the generated examples</li>
+<p data-line="1276" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="1280" class="code-line" dir="auto">
+<li data-line="1280" class="code-line" dir="auto">SEMIC publication repository, to access the CircleCI configuration file</li>
+<li data-line="1281" class="code-line" dir="auto">SEMIC generated repository, to verify removal of the generated examples</li>
 </ul>
-<p data-line="1333" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="1337" class="code-line" dir="auto">
-<li data-line="1337" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="1338" class="code-line" dir="auto">A text editor to edit configuration files</li>
-<li data-line="1339" class="code-line" dir="auto">A web browser to access <a href="https://circleci.com" data-href="https://circleci.com">CircleCI web interface</a></li>
+<p data-line="1283" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="1287" class="code-line" dir="auto">
+<li data-line="1287" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="1288" class="code-line" dir="auto">A text editor to edit configuration files</li>
+<li data-line="1289" class="code-line" dir="auto">A web browser to access <a href="https://circleci.com" data-href="https://circleci.com">CircleCI web interface</a></li>
 </ul>
-<p data-line="1341" class="code-line" dir="auto"><strong>Steps</strong></p>
-<p data-line="1343" class="code-line" dir="auto">Part 1 - enable examples being generated for a specification</p>
-<ol data-line="1347" class="code-line" dir="auto">
-<li data-line="1347" class="code-line" dir="auto">
-<p data-line="1347" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
+<p data-line="1291" class="code-line" dir="auto"><strong>Steps</strong></p>
+<p data-line="1293" class="code-line" dir="auto">Part 1 - enable examples being generated for a specification</p>
+<ol data-line="1297" class="code-line" dir="auto">
+<li data-line="1297" class="code-line" dir="auto">
+<p data-line="1297" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
 </li>
-<li data-line="1348" class="code-line" dir="auto">
-<p data-line="1348" class="code-line" dir="auto">Select in the SEMIC generated repository a data specification to create examples for. Let's consider this specification: Core Person test.</p>
+<li data-line="1298" class="code-line" dir="auto">
+<p data-line="1298" class="code-line" dir="auto">Select in the SEMIC generated repository a data specification to create examples for. Let's consider this specification: Core Person test.</p>
 </li>
-<li data-line="1349" class="code-line" dir="auto">
-<p data-line="1349" class="code-line" dir="auto">Trigger the build process for the selected data specification by updating the publication.json file in the SEMIC publication repository by setting the configuration property “examples” to “true”</p>
-<pre><code data-line="1351" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="1299" class="code-line" dir="auto">
+<p data-line="1299" class="code-line" dir="auto">Trigger the build process for the selected data specification by updating the publication.json file in the SEMIC publication repository by setting the configuration property “examples” to “true”</p>
+<pre><code data-line="1301" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="1352" class="code-line" dir="auto">"examples": "true",</p>
-<pre><code data-line="1353" class="code-line" dir="auto"><code><div>
+<p data-line="1302" class="code-line" dir="auto">"examples": "true",</p>
+<pre><code data-line="1303" class="code-line" dir="auto"><code><div>
 
 
     Commit and push to the SEMIC publication repository
@@ -2215,75 +2166,75 @@ Part 2 - adapt the workflow to not generate the examples.
     ```
 "dummy": "6",
 </div></code></code></pre>
-<pre data-line="1382" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
+<pre data-line="1332" class="code-line" dir="auto"><code>and commit and push to the SEMIC publication repository
 </code></pre>
-<p data-line="1385" class="code-line" dir="auto"><strong>Test the result</strong></p>
-<p data-line="1387" class="code-line" dir="auto">Once the last change has happened the CircleCI will not anymore create examples, even when the property in the publication JSON is present. This is because the code that would react to this property (being true or false) is not anymore executed. This code has become dormant in the updated CircleCI configuration.</p>
-<p data-line="1389" class="code-line" dir="auto">To verify the effect of the change, select another data specification that has no examples present and apply the steps of part 1 for that specification.One will observe that no examples are being created in the SEMIC generated repository.</p>
-<p data-line="1391" class="code-line" dir="auto">One also can see the change in the CircleCI web interface. By outcommenting the lines the step has become dormant and is not anymore visible in the workflow.</p>
-<h3 data-line="1394" class="code-line" dir="auto" id="uc9-initiating-a-new-semic-thema-repository" tabindex="-1">UC9: Initiating a new SEMIC thema repository</h3>
-<p data-line="1396" class="code-line" dir="auto"><strong>Objective</strong></p>
-<p data-line="1398" class="code-line" dir="auto">In use cases 1 - 6, the current setup of the SEMIC toolchain is assumed: a single thema repository containing all Core Vocabularies. However, not all SEMIC data specifications follow the same life cycle as the Core Vocabularies, for instance DCAT-AP. In that case it is recommended to manage the data specification in its own thema repository.</p>
-<p data-line="1400" class="code-line" dir="auto">This use case will initiate a new thema repository for a data specification.</p>
-<p data-line="1402" class="code-line" dir="auto"><strong>Roles involved</strong></p>
-<ul data-line="1406" class="code-line" dir="auto">
-<li data-line="1406" class="code-line" dir="auto">An editor that needs to create a new data specification</li>
-<li data-line="1407" class="code-line" dir="auto">A toolchain developer that needs to initiate the new thema repository for that new data specification</li>
+<p data-line="1335" class="code-line" dir="auto"><strong>Test the result</strong></p>
+<p data-line="1337" class="code-line" dir="auto">Once the last change has happened the CircleCI will not anymore create examples, even when the property in the publication JSON is present. This is because the code that would react to this property (being true or false) is not anymore executed. This code has become dormant in the updated CircleCI configuration.</p>
+<p data-line="1339" class="code-line" dir="auto">To verify the effect of the change, select another data specification that has no examples present and apply the steps of part 1 for that specification.One will observe that no examples are being created in the SEMIC generated repository.</p>
+<p data-line="1341" class="code-line" dir="auto">One also can see the change in the CircleCI web interface. By outcommenting the lines the step has become dormant and is not anymore visible in the workflow.</p>
+<h3 data-line="1344" class="code-line" dir="auto" id="uc9-initiating-a-new-semic-thema-repository" tabindex="-1">UC9: Initiating a new SEMIC thema repository</h3>
+<p data-line="1346" class="code-line" dir="auto"><strong>Objective</strong></p>
+<p data-line="1348" class="code-line" dir="auto">In use cases 1 - 6, the current setup of the SEMIC toolchain is assumed: a single thema repository containing all Core Vocabularies. However, not all SEMIC data specifications follow the same life cycle as the Core Vocabularies, for instance DCAT-AP. In that case it is recommended to manage the data specification in its own thema repository.</p>
+<p data-line="1350" class="code-line" dir="auto">This use case will initiate a new thema repository for a data specification.</p>
+<p data-line="1352" class="code-line" dir="auto"><strong>Roles involved</strong></p>
+<ul data-line="1356" class="code-line" dir="auto">
+<li data-line="1356" class="code-line" dir="auto">An editor that needs to create a new data specification</li>
+<li data-line="1357" class="code-line" dir="auto">A toolchain developer that needs to initiate the new thema repository for that new data specification</li>
 </ul>
-<p data-line="1409" class="code-line" dir="auto">**Prior Knowledge **</p>
-<ul data-line="1413" class="code-line" dir="auto">
-<li data-line="1413" class="code-line" dir="auto">GitHub account with all necessary permissions</li>
-<li data-line="1414" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="1415" class="code-line" dir="auto">How to work with GitHub templates</li>
-<li data-line="1416" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
-<li data-line="1417" class="code-line" dir="auto">Knowledge about the data specification (naming, etc.)</li>
+<p data-line="1359" class="code-line" dir="auto">**Prior Knowledge **</p>
+<ul data-line="1363" class="code-line" dir="auto">
+<li data-line="1363" class="code-line" dir="auto">GitHub account with all necessary permissions</li>
+<li data-line="1364" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
+<li data-line="1365" class="code-line" dir="auto">How to work with GitHub templates</li>
+<li data-line="1366" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
+<li data-line="1367" class="code-line" dir="auto">Knowledge about the data specification (naming, etc.)</li>
 </ul>
-<p data-line="1419" class="code-line" dir="auto"><strong>Repositories</strong></p>
-<ul data-line="1423" class="code-line" dir="auto">
-<li data-line="1423" class="code-line" dir="auto">SEMIC publication repository, to initiate an initial build</li>
-<li data-line="1424" class="code-line" dir="auto">SEMIC generated repository, to verify the transformation outcome</li>
+<p data-line="1369" class="code-line" dir="auto"><strong>Repositories</strong></p>
+<ul data-line="1373" class="code-line" dir="auto">
+<li data-line="1373" class="code-line" dir="auto">SEMIC publication repository, to initiate an initial build</li>
+<li data-line="1374" class="code-line" dir="auto">SEMIC generated repository, to verify the transformation outcome</li>
 </ul>
-<p data-line="1426" class="code-line" dir="auto"><strong>Tools</strong></p>
-<ul data-line="1430" class="code-line" dir="auto">
-<li data-line="1430" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
-<li data-line="1431" class="code-line" dir="auto">An text editor, to edit configurations files</li>
-<li data-line="1432" class="code-line" dir="auto">A web browser to access <a href="https://circleci.com" data-href="https://circleci.com">CircleCI web interface</a></li>
+<p data-line="1376" class="code-line" dir="auto"><strong>Tools</strong></p>
+<ul data-line="1380" class="code-line" dir="auto">
+<li data-line="1380" class="code-line" dir="auto">A Git client to pull, commit and push to the repositories</li>
+<li data-line="1381" class="code-line" dir="auto">An text editor, to edit configurations files</li>
+<li data-line="1382" class="code-line" dir="auto">A web browser to access <a href="https://circleci.com" data-href="https://circleci.com">CircleCI web interface</a></li>
 </ul>
-<p data-line="1434" class="code-line" dir="auto"><strong>Steps</strong></p>
-<p data-line="1436" class="code-line" dir="auto">Part 1 - Initialise a new thema repository with boilerplate information</p>
-<ol data-line="1440" class="code-line" dir="auto">
-<li data-line="1440" class="code-line" dir="auto">The toolchain developer will login into GitHub using its web browser</li>
-<li data-line="1441" class="code-line" dir="auto">Then select thema template on GitHub (<a href="https://github.com/Informatievlaanderen/OSLOthema-template" data-href="https://github.com/Informatievlaanderen/OSLOthema-template">https://github.com/Informatievlaanderen/OSLOthema-template</a>)</li>
-<li data-line="1442" class="code-line" dir="auto">Use the template to create in the target organisation space a new GitHub repository. In this case, the organisation is SEMICeu and the repository name will be Semicthema-DCAT-AP. This will result in the new GitHub repository <a href="https://github.com/SEMICeu/Semicthema-DCAT-AP" data-href="https://github.com/SEMICeu/Semicthema-DCAT-AP">https://github.com/SEMICeu/Semicthema-DCAT-AP</a>. Note that the visibility of the new repository is a policy decision; the toolchain is capable of handling public and as well private repositories</li>
-<li data-line="1443" class="code-line" dir="auto">Enable the access rights for the editors according to the organisation's policy</li>
-<li data-line="1444" class="code-line" dir="auto">As the template contains dummy, placeholder files, the new thema repository is ready to be used</li>
+<p data-line="1384" class="code-line" dir="auto"><strong>Steps</strong></p>
+<p data-line="1386" class="code-line" dir="auto">Part 1 - Initialise a new thema repository with boilerplate information</p>
+<ol data-line="1390" class="code-line" dir="auto">
+<li data-line="1390" class="code-line" dir="auto">The toolchain developer will login into GitHub using its web browser</li>
+<li data-line="1391" class="code-line" dir="auto">Then select thema template on GitHub (<a href="https://github.com/Informatievlaanderen/OSLOthema-template" data-href="https://github.com/Informatievlaanderen/OSLOthema-template">https://github.com/Informatievlaanderen/OSLOthema-template</a>)</li>
+<li data-line="1392" class="code-line" dir="auto">Use the template to create in the target organisation space a new GitHub repository. In this case, the organisation is SEMICeu and the repository name will be Semicthema-DCAT-AP. This will result in the new GitHub repository <a href="https://github.com/SEMICeu/Semicthema-DCAT-AP" data-href="https://github.com/SEMICeu/Semicthema-DCAT-AP">https://github.com/SEMICeu/Semicthema-DCAT-AP</a>. Note that the visibility of the new repository is a policy decision; the toolchain is capable of handling public and as well private repositories</li>
+<li data-line="1393" class="code-line" dir="auto">Enable the access rights for the editors according to the organisation's policy</li>
+<li data-line="1394" class="code-line" dir="auto">As the template contains dummy, placeholder files, the new thema repository is ready to be used</li>
 </ol>
-<p data-line="1446" class="code-line" dir="auto">Part 2 - Initialise the new thema repository with concrete information of the new data specification</p>
-<ol data-line="1450" class="code-line" dir="auto">
-<li data-line="1450" class="code-line" dir="auto">Configure with the editor the new data specification content in the repository
-<ol data-line="1451" class="code-line" dir="auto">
-<li data-line="1451" class="code-line" dir="auto">Adapt the config file that describes the data specification and change the file name to reflect the data specification that is configured in that file</li>
-<li data-line="1452" class="code-line" dir="auto">Adapt the UML file to hold an initial version of the data specification</li>
-<li data-line="1453" class="code-line" dir="auto">Adapt the stakeholders file to describe all initial collaborators to the data specification</li>
-<li data-line="1454" class="code-line" dir="auto">Adapt the overview image to hold the initial version of the data specification</li>
-<li data-line="1455" class="code-line" dir="auto">Adapt the template files to hold the initial summary and supportive texts</li>
+<p data-line="1396" class="code-line" dir="auto">Part 2 - Initialise the new thema repository with concrete information of the new data specification</p>
+<ol data-line="1400" class="code-line" dir="auto">
+<li data-line="1400" class="code-line" dir="auto">Configure with the editor the new data specification content in the repository
+<ol data-line="1401" class="code-line" dir="auto">
+<li data-line="1401" class="code-line" dir="auto">Adapt the config file that describes the data specification and change the file name to reflect the data specification that is configured in that file</li>
+<li data-line="1402" class="code-line" dir="auto">Adapt the UML file to hold an initial version of the data specification</li>
+<li data-line="1403" class="code-line" dir="auto">Adapt the stakeholders file to describe all initial collaborators to the data specification</li>
+<li data-line="1404" class="code-line" dir="auto">Adapt the overview image to hold the initial version of the data specification</li>
+<li data-line="1405" class="code-line" dir="auto">Adapt the template files to hold the initial summary and supportive texts</li>
 </ol>
 </li>
-<li data-line="1456" class="code-line" dir="auto">Clean up and remove any non used boilerplate information</li>
-<li data-line="1457" class="code-line" dir="auto">Document all these changes in the CHANGELOG file (in the root of the thema repository) and commit and push the changes</li>
+<li data-line="1406" class="code-line" dir="auto">Clean up and remove any non used boilerplate information</li>
+<li data-line="1407" class="code-line" dir="auto">Document all these changes in the CHANGELOG file (in the root of the thema repository) and commit and push the changes</li>
 </ol>
-<p data-line="1459" class="code-line" dir="auto">Part 3 - Trigger a build of the data specification in SEMIC publication repository</p>
-<p data-line="1461" class="code-line" dir="auto">These steps are similar to the explanation in UC1, and are thus summarised here in short.</p>
-<ol data-line="1465" class="code-line" dir="auto">
-<li data-line="1465" class="code-line" dir="auto">
-<p data-line="1465" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
+<p data-line="1409" class="code-line" dir="auto">Part 3 - Trigger a build of the data specification in SEMIC publication repository</p>
+<p data-line="1411" class="code-line" dir="auto">These steps are similar to the explanation in UC1, and are thus summarised here in short.</p>
+<ol data-line="1415" class="code-line" dir="auto">
+<li data-line="1415" class="code-line" dir="auto">
+<p data-line="1415" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</p>
 </li>
-<li data-line="1466" class="code-line" dir="auto">
-<p data-line="1466" class="code-line" dir="auto">In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):</p>
-<pre><code data-line="1468" class="code-line" dir="auto"><code><div></div></code></code></pre>
+<li data-line="1416" class="code-line" dir="auto">
+<p data-line="1416" class="code-line" dir="auto">In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):</p>
+<pre><code data-line="1418" class="code-line" dir="auto"><code><div></div></code></code></pre>
 </li>
 </ol>
-<p data-line="1469" class="code-line" dir="auto">,{
+<p data-line="1419" class="code-line" dir="auto">,{
 "dummy": "1",
 "urlref": "/doc/applicationprofile/DCAT-AP",
 "repository": "git@uri.semic.eu-thema:SEMICeu/Semicthema-DCAT-AP.git",
@@ -2292,7 +2243,7 @@ Part 2 - adapt the workflow to not generate the examples.
 "filename": "config/dcat-ap.json",
 "navigation": {}
 }</p>
-<pre><code data-line="1478" class="code-line" dir="auto"><code><div>
+<pre><code data-line="1428" class="code-line" dir="auto"><code><div>
 
 
         This defines a new publication based on the content of the newly created thema  repository

@@ -84,7 +84,7 @@ This use case will initiate a new thema repository for a data specification.
 * An editor that needs to create a new data specification
 * A toolchain developer that needs to initiate the new thema repository for that new data specification
 
-**Prior Knowledge **
+**Prior Knowledge**
 
 * GitHub account with all necessary permissions
 * How to pull, commit and push in a Git repository

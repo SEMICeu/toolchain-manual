@@ -88,7 +88,7 @@ table, thead, tr, td {
     border-style: solid;
 }
 
-table tr:first-child td {
+table thead tr:first-child th {
     background: #005a9c;
     color: #fff;
     padding: 3px 5px;

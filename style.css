@@ -10,7 +10,6 @@
     color: black;
     background: inherit;
     background-color: #f7f8f9;
-    background-color: var(--tocsidebar-bg);
     z-index: 1;
     box-shadow: -0.1em 0 0.25em rgb(0 0 0 / 10%) inset;
 }

@@ -48,7 +48,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="managing_persistent_URIs.md">Managing Persistent URIs</a></td>
-   <td>UC3</td>
+   <td><a href="managing_persistent_URIs.md#uc3-create-a-persistent-uri-for-a-new-property">UC3</a></td>
   </tr>
   <tr>
    <td><a href="editing_HTML_specifications.md">Editing HTML specifications</a></td>

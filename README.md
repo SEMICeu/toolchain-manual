@@ -40,55 +40,14 @@ The publication process of a data specification involves 2 roles:
 
 During the publication process, multiple tasks are performed covering different tasks executed over one or more use cases:
 
-
-<table>
-  <tr>
-   <td><strong>Task</strong>
-   </td>
-   <td><strong>Use case</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>[Extend an existing data model](extend_existing_data_model.md)
-   </td>
-   <td>UC1
-   </td>
-  </tr>
-  <tr>
-   <td>Updating the UML data model
-   </td>
-   <td>UC2
-   </td>
-  </tr>
-  <tr>
-   <td>Managing Persistent URIs
-   </td>
-   <td>UC3
-   </td>
-  </tr>
-  <tr>
-   <td>Editing HTML specifications
-   </td>
-   <td>UC4, UC5, UC6
-   </td>
-  </tr>
-  <tr>
-   <td>Deploy new software releases
-   </td>
-   <td>UC7
-   </td>
-  </tr>
-  <tr>
-   <td>Customise the publication process
-   </td>
-   <td>UC8, UC9
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >Table 1: Publication workflow tasks and use cases
-   </td>
-  </tr>
-</table>
+| Task                                                                  | Use cases     |
+|-----------------------------------------------------------------------|---------------|
+| [Extend an existing data model](extend_existing_data_model.md)        | UC1           |
+| [Updating the UML data model] (updating_UML_data_model.md)            | UC2           | 
+| [Managing Persistent URIs](managing_persistent_URIs.md)               | UC3           |
+| [Editing HTML specifications](editing_HTML_specifications.md)         | UC4, UC5, UC6 |
+| [Deploy new software releases](deploy_new_software_releases.md)       | UC7           |
+| [Customise the publication process](customise_publication_process.md) | UC8, UC9      |
 
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the [Table 2](#bookmark=id.ejufpwqj4w82): 

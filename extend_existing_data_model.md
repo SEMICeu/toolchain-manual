@@ -43,9 +43,7 @@ Setup a new custom data specification from an existing one in order to add new p
   }
 ```
 
-
-
-    Notice the “,” character before to concatenate with the previous section and save the file.
+Notice the “,” character before to concatenate with the previous section and save the file.
 
 3. In step 2 we indicated that the filename of the JSON configuration of the new Core Person should be in the config folder of the SEMIC thema repository called core-person-test.json, so duplicate core-person-2.json and rename it core-person-test.json 
 4. Edit the core-person-test.json and modify just the “eap” property to

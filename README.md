@@ -119,14 +119,10 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 </ul>
    </td>
   </tr>
-  <tr>
-   <td colspan="2" >Table 2: Toolchain Github Repositories
-   </td>
-  </tr>
 </table>
 
 
-In [Table 3](#bookmark=id.n252uta6c46t) the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
+In the below table the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
 
 
 <table>
@@ -260,6 +256,12 @@ In [Table 3](#bookmark=id.n252uta6c46t) the reader can find a summary of the rep
    <td>
    </td>
    <td>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Roles</strong>
+   </td>
+   <td colspan="9">
    </td>
   </tr>
   <tr>

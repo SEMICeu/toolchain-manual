@@ -1,3 +1,5 @@
+#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Extend an existing model >>>](extend_existing_data_model.md)
+
 ## Task: Extend an existing data model
 
 ### UC1: Create a new Core Person 
@@ -66,3 +68,5 @@ Once the publication process ended, pull the latest code from the SEMIC generate
 * A “html” folder containing the overview.jpg and semic-icon.png
 * A “shacl” folder containing the SHACL shape files in turtle and JSON-LD
 * A “xsd” folder containing the XML schema files
+
+#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Extend an existing model >>>](extend_existing_data_model.md)

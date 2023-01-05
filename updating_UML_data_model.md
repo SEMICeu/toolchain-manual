@@ -87,3 +87,5 @@ Once the publication process ended, pull the latest code from the SEMIC generate
 ![alt_text](images/image4.png "Verify attribute is present in HTML page")
 
 * The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.
+
+#### [<<< Previous page: Task-Extend an existing model ](extend_existing_data_model.md) --- [Next page: Task-Managing Persistent URIs >>>](managing_persistent_URIs.md)

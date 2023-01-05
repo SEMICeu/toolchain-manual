@@ -60,7 +60,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="customise_publication_process.md">Customise the publication process</a></td>
-   <td>UC8, UC9</td>
+   <td><a href="customise_publication_process.md#uc8-using-circleci-to-build-data-specifications">UC8</a>, <a href="customise_publication_process.md#uc9-initiating-a-new-semic-thema-repository">UC9</a></td>
   </tr>
 </table>
 

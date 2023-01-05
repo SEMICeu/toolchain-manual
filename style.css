@@ -64,3 +64,14 @@ body {
 h1, h2, h3 {
     color: #005a9c;
 }
+
+pre {
+    color: black;
+    counter-increment: example;
+    clear: both;
+    padding: 0.5em;
+    border-left-width: 0.5em;
+    border-left-style: solid;
+    border-color: #e0cb52;
+    background: #fcfaee !important;
+}

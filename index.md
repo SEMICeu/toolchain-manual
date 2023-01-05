@@ -121,14 +121,9 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 </ul>
    </td>
   </tr>
-  <tr>
-   <td colspan="2" >Table 2: Toolchain Github Repositories
-   </td>
-  </tr>
 </table>
 
-
-In [Table 3](#bookmark=id.n252uta6c46t) the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
+In below table the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
 
 
 <table>
@@ -506,26 +501,15 @@ In [Table 3](#bookmark=id.n252uta6c46t) the reader can find a summary of the rep
    <td>X
    </td>
   </tr>
-  <tr>
-   <td colspan="10" >Table 3: View of Tools, Roles and Repositories needed to execute each use case
-   </td>
-  </tr>
 </table>
 
-
 As can be seen, most of the time the editor will use mainly the SEMIC thema, publication and generated repository for its operations. The editor and toolchain developer collaborate on UC3 to create and enable persistent URI’s and in UC9 to create a new SEMIC thema repository.
-
-
-## 
-
 
 # Tasks Execution
 
 In order to execute the task described in this section, the reader is referred to the existing SEMIC data specification [Core Person](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary). In this section, the first tasks in the editorial and publication process are described using mainly [Core Person](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-person-vocabulary) while the last tasks, covered by UC7, UC8 and UC9, focus on customising the publication process.
 
-
 ## Task: Extend an existing data model
-
 
 ### UC1: Create a new Core Person 
 
@@ -535,20 +519,14 @@ Setup a new custom data specification from an existing one in order to add new p
 
 **Roles involved**
 
-
-
 * An editor that needs to create a new specification
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Be able to understand a JSON structure to edit configuration files
 
 **Repositories**
-
-
 
 * SEMIC thema repository, to access the JSON configuration file and the EAP file
 * SEMIC publication repository, to access  the JSON publication file
@@ -556,31 +534,25 @@ Setup a new custom data specification from an existing one in order to add new p
 
 **Tools**
 
-
-
 * A Git client to pull, commit and push to the repositories
 * A text editor, to edit configuration files
 
 **Steps**
 
-
-
 1. Pull the latest code from the SEMIC thema, publication and generated repository 
 2. In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):
 
     ```
-,{
-    "dummy": "1",
-    "urlref": "/doc/core-vocabulary/core-person-test",
-    "repository": "git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git",
-    "branchtag": "main",
-    "name": "core-person-ap",
-    "filename": "config/core-person-test.json",
-    "navigation": {}
-  }
-```
-
-
+    ,{
+        "dummy": "1",
+        "urlref": "/doc/core-vocabulary/core-person-test",
+        "repository": "git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git",
+        "branchtag": "main",
+        "name": "core-person-ap",
+        "filename": "config/core-person-test.json",
+        "navigation": {}
+    }
+    ```
 
     Notice the “,” character before to concatenate with the previous section and save the file.
 
@@ -588,10 +560,8 @@ Setup a new custom data specification from an existing one in order to add new p
 4. Edit the core-person-test.json and modify just the “eap” property to
 
     ```
-"eap": "CorePerson-test.EAP",
-```
-
-
+    "eap": "CorePerson-test.EAP",
+    ```
 
     Be careful to keep a  “,” at the end to concatenate with the next section and save the file.
 
@@ -602,25 +572,19 @@ Setup a new custom data specification from an existing one in order to add new p
 
 Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder (as indicated in the publication.json file) including: 
 
-
-
 * index.html and index_en.html
 * A “context” folder containing the JSON-LD context files
 * A “html” folder containing the overview.jpg and semic-icon.png
 * A “shacl” folder containing the SHACL shape files in turtle and JSON-LD
 * A “xsd” folder containing the XML schema files
 
-
 ## Task: Updating the UML data model
-
 
 ### UC2: Adding a new property in an existing class
 
 **Objective**
 
 In the Core Person Test, there is a need to add “baptismal name” property within the Person class. It has been decided to:
-
-
 
 * use the UML attribute “baptsimalName”
 * use the type Text
@@ -631,13 +595,9 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 
 **Roles involved**
 
-
-
 * An editor that needs to add a new property in the model
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * UML modelling and semantic model, see the [Data model](https://github.com/SEMICeu/documentation/blob/main/datamodel.md) section
@@ -646,15 +606,11 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 
 **Repositories**
 
-
-
 * SEMIC thema repository, to access the JSON configuration file, the EAP file and site-skeleton folder
 * SEMIC publication repository, to access  the JSON publication file
 * SEMIC generated repository, to verify the artefact generated
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * Enterprise Architect to apply changes to the UML class diagram
@@ -663,8 +619,6 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 
 **Steps**
 
-
-
 1. Pull the latest code from the SEMIC thema repository 
 2. Open the CorePerson-test.EAP file with Enterprise Architect
 3. In “Project Browser” ribbon, expand the Core Person package, double click on the diagram called “Core_Person_publication”, select the class Person
@@ -672,43 +626,23 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 5. Next define the Type “Text” to be selected from the drop-down menu “Select Type…” under “Core Vocabulary” package
 6. Select the Scope “Public”
 
-    
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+    ![alt_text](images/image1.png "image_tooltip")
 
 7. In the “Attribute Properties” ribbon, look for the Multiplicity property and select the default value “[1]”, double click on it and select Lower bound to 0 and Upper bound *, click OK
 
-    
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+    ![alt_text](images/image2.png "image_tooltip")
 
 8. In the “Tagged Values” ribbon, select the now empty “Attribute (baptsimalName)” section, click on “Add new tagged value” icon, in Tag type “label-en” with Value “baptismal name”, click OK
 
-    
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+    ![alt_text](images/image3.png "image_tooltip")
 
 9. Click again on “Add new tagged value” icon, in Tag type “definition-en” with Value “the name given by Christians”, click OK
 10. Click again on “Add new tagged value” icon, in Tag type “uri” with Value “http://data.europa.eu/m8g/baptismalName”, click OK
 11. As the UML diagram changed but we reuse the same folder of the original Core Person, we change the core-person-test.json file and modify just the “site” property to
 
     ```
-"site": "site-skeleton/core-person-test",
-```
-
-
+    "site": "site-skeleton/core-person-test",
+    ```
 
     and save the file.
 
@@ -718,36 +652,23 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 15. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
     ```
-"dummy": "2",
-```
-
-
+    "dummy": "2",
+    ```
 
     and commit and push to the SEMIC publication repository
-
 
 **Test the result**
 
 Once the publication process ended, pull the latest code from the SEMIC generated repository and verify under the doc/core-vocabulary folder, that there is a core-person-test folder including:
 
-
-
 * The image “overview.jpg”, located in the html folder and linked from the index.html, has been updated including the new property
 * The new property appears under the Person class section in the index.html file, with the respective label, definition and multiplicity
 
-    
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image4.png "image_tooltip")
-
 
 * The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.)
 
-
 ## Task: Managing Persistent URIs
-
 
 ### UC3: Create a persistent URI for a new property
 
@@ -759,14 +680,10 @@ When a specification is officially released, the persistent URI is maintained as
 
 **Roles involved**
 
-
-
 * An editor that needs to define a new persistent URI
 * A toolchain developer to enable the new persistent URI
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Having read the [Persistent URI documentation](https://github.com/SEMICeu/documentation/blob/main/puri.md)
@@ -782,8 +699,6 @@ When a specification is officially released, the persistent URI is maintained as
 
 **Tools**
 
-
-
 * A Git client to pull, commit and push to the repositories
 * A SSH key pair setup within to PURI service machine and a SSH Client
 * A text editor, to edit RDF files and configuration file
@@ -792,47 +707,39 @@ When a specification is officially released, the persistent URI is maintained as
 
 **Steps**
 
-
-
 1. To setup the RDF redirection, pull the latest code from the SEMIC puri repository
     1. Under releases/m8g folder, create 3 empty files: baptsimalName.nt, baptsimalName.rdf and baptsimalName.ttl
     2. Open with a text editor the baptsimalName.ttl and type the following:
 
         ```
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+        @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://data.europa.eu/m8g/baptsimalName>
-    a rdf:Property, <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
-     <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  
-<http://data.europa.eu/m8g> ;
-    <http://www.w3.org/2004/02/skos/core#scopeNote> "the name given by Christians."@en ;
-  <http://www.w3.org/2000/01/rdf-schema#label> "baptsimal name"@en .
-```
+        <http://data.europa.eu/m8g/baptsimalName>
+            a rdf:Property, <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+            <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  
+        <http://data.europa.eu/m8g> ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "the name given by Christians."@en ;
+        <http://www.w3.org/2000/01/rdf-schema#label> "baptsimal name"@en .
+        ```
 
-
-
-    And save the file.
+        And save the file.
 
     3. For the other 2 formats, either they are typed manually or they can be generated with automatic tools such as [EasyRDF](https://www.easyrdf.org/converter), [RDF translator](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwwrnOtvb7AhUN2xoKHVyPCh0QFnoECBEQAQ&url=https%3A%2F%2Frdf-translator.appspot.com%2F&usg=AOvVaw1My-fDwxW5-ZC29xHa5JQy), [RDF validator](http://rdfvalidator.mybluemix.net/)… 
     4. Commit and push the changes in the SEMIC puri repository
 2. To setup the HTML redirection, pull the latest code from the SEMIC proxy repository
-    5. Open, with a text editor, the file “htmlmap.lua” and add, at the end of the file (before the “}”  character), a line for for the new URI:
+    1. Open, with a text editor, the file “htmlmap.lua” and add, at the end of the file (before the “}”  character), a line for for the new URI:
 
         ```
-["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
-```
+        ["/m8g/baptismalName"] = "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/#Person%3Abaptismal%20name"
+        ```
 
+        and save the file.
 
+        Be careful to add a “,” character at the end of the previous line so the properties can be correctly read.
 
-    and save the file.
+        Notice the last part of the line “Person%3Abaptismal%20name”, this is the HTML id generated in the UC2 in the index.html concatenating the class with property name.
 
-
-    Be careful to add a “,” character at the end of the previous line so the properties can be correctly read.
-
-
-    Notice the last part of the line “Person%3Abaptismal%20name”, this is the HTML id generated in the UC2 in the index.html concatenating the class with property name.
-
-    6. Commit and push the changes to the SEMIC proxy repository
+    2. Commit and push the changes to the SEMIC proxy repository
 3. The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:
 
 <table>
@@ -869,31 +776,18 @@ When a specification is officially released, the persistent URI is maintained as
   </tr>
 </table>
 
-
 **Test the result**
-
-
 
 * For the RDF redirection, open the HTTP client and create a HTTP request pointing to [http://data.europa.eu/m8g/baptsimalName](http://data.europa.eu/m8g/baptsimalName):
     * by setting the Accept header to “text/turtle”, it should get an answer like in step 1.2
     * by setting the Accept header to “rdf/xml”, it should get an answer in RDF/XML as saved in step 1.3
     * By setting the Accept header to “application/n-triples”, it should get an answer in N-Triples as saved in step 1.3
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-
-
+        ![alt_text](images/image5.png "image_tooltip")
 
 * For the HTML redirection, open the browser or the HTTP client and point to the URL [http://data.europa.eu/m8g/baptsimalName](http://data.europa.eu/m8g/baptsimalName), it should get redirected to the URL specified in step 2.1, pointing to the exact HTML section of the property
 
-
 ## Task: Editing HTML specifications
-
 
 ### UC4: Update the publication metadata of the specification
 
@@ -901,27 +795,19 @@ When a specification is officially released, the persistent URI is maintained as
 
 There is a need to update the metadata of the specification; in order to create a draft for this new release, the following properties are going to be updated:
 
-
-
 * Publication state, to be set to “SEMIC Draft”
 * Publication date, to be set to “2023-01-01”
 
 **Roles involved**
 
-
-
 * An editor that needs to update the specification
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Be able to understand a JSON structure to edit configuration files
 
 **Repositories**
-
-
 
 * SEMIC thema repository, to access the JSON configuration file
 * SEMIC publication repository, to access  the JSON publication file
@@ -929,26 +815,20 @@ There is a need to update the metadata of the specification; in order to create 
 
 **Tools**
 
-
-
 * A Git client to pull, commit and push to the repositories
 * A text editor, to edit configuration file
 * To test, a web browser that can display the HTML specification
 
 **Steps**
 
-
-
 1. Pull the latest code from the SEMIC thema repository
 2. Open with a text editor the core-person-test.json under the config property
 3. Change the respective lines:
 
     ```
-"publication-state": "Semic Draft",
-"publication-date": "2023-01-01",
-```
-
-
+    "publication-state": "Semic Draft",
+    "publication-date": "2023-01-01",
+    ```
 
     Be careful to add a “,” character after each line and save the file.
 
@@ -957,10 +837,8 @@ There is a need to update the metadata of the specification; in order to create 
 6. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
     ```
-"dummy": "3",
-```
-
-
+    "dummy": "3",
+    ```
 
     and commit and push to the SEMIC publication repository
 
@@ -971,14 +849,7 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the 2 properties have been correctly updated.
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image6.png "image_tooltip")
-
-
 
 ### UC5: Adding a changelog section in the specification
 
@@ -988,13 +859,9 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
 **Roles involved**
 
-
-
 * An editor that needs to update the specification with a changelog
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Be able to understand a JSON structure to edit configuration files
@@ -1002,15 +869,11 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
 **Repositories**
 
-
-
 * SEMIC thema repository, to access the JSON configuration and the template files
 * SEMIC publication repository, to access the JSON publication file
 * SEMIC generated repository, to verify the artefact generated
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * A text editor, to edit configuration files
@@ -1018,47 +881,38 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
 **Steps**
 
-
-
-7. Pull the latest code from the SEMIC thema repository
-8. Open with a text editor the core-person-test.json under the config property
-9. Change the following line:
+1. Pull the latest code from the SEMIC thema repository
+2. Open with a text editor the core-person-test.json under the config property
+3. Change the following line:
 
     ```
- "template": "core-person-ap-test_en.j2",
-```
-
-
+    "template": "core-person-ap-test_en.j2",
+    ```
 
     Be careful to add a “,” character at the end of the line and save the file.
 
-10. Now go in the “template” folders and duplicate the core-person-ap_en.j2 file into core-person-ap-test_en.j2
-11. Open the core-person-ap-test_en.j2 and change the change log section with the following text and save the file:
+4. Now go in the “template” folders and duplicate the core-person-ap_en.j2 file into core-person-ap-test_en.j2
+5. Open the core-person-ap-test_en.j2 and change the change log section with the following text and save the file:
 
     ```
-{% block changelog %}
-<p>
-The new property "baptsimal name" has been added.
-<p>
-{% endblock %}
-```
-
-
+    {% block changelog %}
+    <p>
+    The new property "baptsimal name" has been added.
+    <p>
+    {% endblock %}
+    ```
 
     Notice the {% block changelog %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.
 
-12. Commit and push the files changed in the SEMIC thema repository
-13. Pull the latest code from the SEMIC publication repository
-14. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
+6. Commit and push the files changed in the SEMIC thema repository
+7. Pull the latest code from the SEMIC publication repository
+8. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
     ```
-"dummy": "4",
-```
-
-
+    "dummy": "4",
+    ```
 
     and commit and push to the SEMIC publication repository
-
 
 **Test the result**
 
@@ -1066,14 +920,7 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the section change log has been correctly updated.
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image7.png "image_tooltip")
-
-
 
 ### UC6: Changing the colour of the hyperlinks
 
@@ -1083,13 +930,9 @@ In order to reflect the style of the organisation creating the new specification
 
 **Roles involved**
 
-
-
 * An editor that needs to customise the style of the specification
 
 **Prior Knowledge**
-
-
 
 * How to pull, commit and push in a Git repository
 * Be able to understand a JSON structure to edit configuration files
@@ -1098,15 +941,11 @@ In order to reflect the style of the organisation creating the new specification
 
 **Repositories**
 
-
-
 * SEMIC publication repository, to change the local template
 * SEMIC publication repository, to create a generic template and access to the JSON publication file
 * SEMIC generated repository, to verify the artefact generated
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * A text editor, to edit configuration files
@@ -1114,24 +953,12 @@ In order to reflect the style of the organisation creating the new specification
 
 **Steps**
 
-
-
 1. Pull the latest code from the SEMIC thema repository
 2. Open the core-person-ap-test_en.j2 in the “template” folder, change the extends header to the following and save the file:
 
     ```
-{% extends "semic_core_voc_test.j2" %}
-```
-
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: Definition &darr;&darr; outside of definition list. Missing preceding term(s)? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-:
-
-
+    {% extends "semic_core_voc_test.j2" %}
+    ```
 
 3. Commit and push the files changed in the SEMIC thema repository
 4. Pull the latest code from the SEMIC publication repository
@@ -1139,22 +966,18 @@ In order to reflect the style of the organisation creating the new specification
 6. Open the semic_core_voc_test.js file with a text editor and add, towards the end, the following lines: 
 
     ```
-a, a:hover {
-   color: #00cc23;
-}
-```
-
-
+    a, a:hover {
+    color: #00cc23;
+    }
+    ```
 
     Just before the  &lt;/style> tag.
 
 7. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
     ```
-"dummy": "5",
-```
-
-
+    "dummy": "5",
+    ```
 
     and commit and push to the SEMIC publication repository
 
@@ -1165,17 +988,9 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the colour of the hyperlinks has been correctly updated.
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image8.png "image_tooltip")
 
-
-
 ## Task: Deploy new software releases
-
 
 ### UC7: Activate a new release of transformation software in the toolchain
 
@@ -1191,13 +1006,9 @@ Within this use case, the objective is to change the toolchain so that it will u
 
 **Roles involved**
 
-
-
 * A toolchain developer that wants to update the toolchain to the new release of the transformation software.
 
 **Prior Knowledge**
-
-
 
 * How to build and run Docker container images
 * Being able to read Docker container images specification (i.e. Dockerfile), and in particular understand how Docker images are interconnected with each other
@@ -1208,14 +1019,10 @@ Within this use case, the objective is to change the toolchain so that it will u
 
 **Repositories**
 
-
-
 * SEMIC publication repository, to access  the CircleCI configuration file
 * SEMIC generated repository, to verify removal of the generated examples
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * An text editor, to edit the CircleCI configuration
@@ -1223,8 +1030,6 @@ Within this use case, the objective is to change the toolchain so that it will u
 * Docker Hub ([https://hub.docker.com/](https://hub.docker.com/)) as image repository distributing the toolchain Docker images 
 
 **Steps**
-
-
 
 1. Pull the latest code from the SEMIC publication repository
 2. Open with the text editor the CircleCI configuration (file .circleci/config.yml)
@@ -1240,17 +1045,13 @@ In the CircleCI web interface one can see the execution of the toolchain. If the
 
 Otherwise the execution will halt at the step with an error. Resolving errors can happen in numerous ways: 
 
-
-
 * by inspecting the logs in the CircleCI web interface;
 * by rerunning the failed step via the CircleCI web interface with an temporary ssh connection and debugging the situation on a real execution state;
 * Reverting back to the original software by resetting the Docker image tag to the original value.
 
 (NOTE) Despite it may be needed to resolve an issue for one data specification, updating software releases is a global change for the toolchain. It impacts all current and future creations of data specifications specified in the SEMIC publication repository. Therefore such changes should be communicated to all editors.
 
-
 ## Task: Customise the publication process
-
 
 ### UC8: Using CircleCI to build data specifications
 
@@ -1262,13 +1063,9 @@ Consider the case that the generation of examples is not required for data speci
 
 **Roles involved**
 
-
-
 * A toolchain developer that wants to update the workflow of the toolchain
 
 **Prior Knowledge**
-
-
 
 * Knowledge about CI/CD and in particular of [CircleCI](https://circleci.com/docs/)
 * A GitHub account that is connected with SEMIC publication repository and which is also registered as a CircleCI user
@@ -1276,14 +1073,10 @@ Consider the case that the generation of examples is not required for data speci
 
 **Repositories**
 
-
-
 * SEMIC publication repository, to access the CircleCI configuration file
 * SEMIC generated repository, to verify removal of the generated examples
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * A text editor to edit configuration files
@@ -1293,29 +1086,20 @@ Consider the case that the generation of examples is not required for data speci
 
 Part 1 - enable examples being generated for a specification
 
-
-
 1. Pull the latest code from the SEMIC publication repository 
 2. Select in the SEMIC generated repository a data specification to create examples for. Let's consider this specification: Core Person test.
 3. Trigger the build process for the selected data specification by updating the publication.json file in the SEMIC publication repository by setting the configuration property “examples” to “true”
 
     ```
-"examples": "true",
-```
-
-
+    "examples": "true",
+    ```
 
     Commit and push to the SEMIC publication repository
 
 4. Verify in the SEMIC generated repository that the examples are created (see https://github.com/SEMICeu/uri.semic.eu-generated/tree/master/examples/core-person-test)
 5. In the web interface of CircleCI the latest execution trace should mention a step in the visualised workflow called “render-example-templates”.
 
-      
-
-
 Part 2 - adapt the workflow to not generate the examples.
-
-
 
 6. Open with the text editor the CircleCI configuration (file .circleci/config.yml) within the SEMIC publication repository
 7. Outcomment the lines 566-568 ([https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566](https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566)) by putting a # symbol as the first character of each line
@@ -1325,13 +1109,10 @@ Part 2 - adapt the workflow to not generate the examples.
 11. Trigger the build process for an existing specification by updating the publication.json file in the SEMIC publication repository by changing the dummy value to
 
     ```
-"dummy": "6",
-```
-
-
+    "dummy": "6",
+    ```
 
     and commit and push to the SEMIC publication repository
-
 
 **Test the result**
 
@@ -1340,7 +1121,6 @@ Once the last change has happened the CircleCI will not anymore create examples,
 To verify the effect of the change, select another data specification that has no examples present and apply the steps of part 1 for that specification.One will observe that no examples are being created in the SEMIC generated repository. 
 
 One also can see the change in the CircleCI web interface. By outcommenting the lines the step has become dormant and is not anymore visible in the workflow. 
-
 
 ### UC9: Initiating a new SEMIC thema repository
 
@@ -1352,14 +1132,10 @@ This use case will initiate a new thema repository for a data specification.
 
 **Roles involved**
 
-
-
 * An editor that needs to create a new data specification
 * A toolchain developer that needs to initiate the new thema repository for that new data specification
 
 **Prior Knowledge **
-
-
 
 * GitHub account with all necessary permissions
 * How to pull, commit and push in a Git repository
@@ -1369,14 +1145,10 @@ This use case will initiate a new thema repository for a data specification.
 
 **Repositories**
 
-
-
 * SEMIC publication repository, to initiate an initial build
 * SEMIC generated repository, to verify the transformation outcome
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * An text editor, to edit configurations files
@@ -1386,8 +1158,6 @@ This use case will initiate a new thema repository for a data specification.
 
 Part 1 - Initialise a new thema repository with boilerplate information 
 
-
-
 1. The toolchain developer will login into GitHub using its web browser 
 2. Then select thema template on GitHub ([https://github.com/Informatievlaanderen/OSLOthema-template](https://github.com/Informatievlaanderen/OSLOthema-template)) 
 3. Use the template to create in the target organisation space a new GitHub repository. In this case, the organisation is SEMICeu and the repository name will be Semicthema-DCAT-AP. This will result in the new GitHub repository https://github.com/SEMICeu/Semicthema-DCAT-AP. Note that the visibility of the new repository is a policy decision; the toolchain is capable of handling public and as well private repositories
@@ -1395,8 +1165,6 @@ Part 1 - Initialise a new thema repository with boilerplate information
 5. As the template contains dummy, placeholder files, the new thema repository is ready to be used
 
 Part 2 - Initialise the new thema repository with concrete information of the new data specification
-
-
 
 1. Configure with the editor the new data specification content in the repository
     1. Adapt the config file that describes the data specification and change the file name to reflect the data specification that is configured in that file
@@ -1411,38 +1179,30 @@ Part 3 - Trigger a build of the data specification in SEMIC publication reposito
 
 These steps are similar to the explanation in UC1, and are thus summarised here in short.
 
-
-
 1. Pull the latest code from the SEMIC publication repository
 2. In the SEMIC publication repository modify the publication.json file inside the config/dev folder by adding at the end the following section (just before the “]” character):
 
     ```
-,{
-    "dummy": "1",
-    "urlref": "/doc/applicationprofile/DCAT-AP",
-    "repository": "git@uri.semic.eu-thema:SEMICeu/Semicthema-DCAT-AP.git",
-    "branchtag": "main",
-    "name": "dcat-ap",
-    "filename": "config/dcat-ap.json",
-    "navigation": {}
-  }
-```
+    ,{
+        "dummy": "1",
+        "urlref": "/doc/applicationprofile/DCAT-AP",
+        "repository": "git@uri.semic.eu-thema:SEMICeu/Semicthema-DCAT-AP.git",
+        "branchtag": "main",
+        "name": "dcat-ap",
+        "filename": "config/dcat-ap.json",
+        "navigation": {}
+    }
+    ```
 
+    This defines a new publication based on the content of the newly created thema  repository
 
-
-        This defines a new publication based on the content of the newly created thema  repository
-
-
-
-1. Commit and push the change to the SEMIC publication repository 
+3. Commit and push the change to the SEMIC publication repository 
 
 **Test the result**
 
 When the new thema repository is correctly configured then the last step will result in an update to the SEMIC generated repository. A new directory will appear: /doc/applicationprofile/DCAT-AP.
 
 In case of errors, consult the CircleCI web interface to find the step that caused the error. The most frequent sources of problems are: 
-
-
 
 * The JSON configuration files are not in the proper JSON syntax. In this case, a JSON formatter can be used (e.g., [jq](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5tpDpt_b7AhVhgc4BHTWBBXIQFnoECA8QAQ&url=https%3A%2F%2Fjqplay.org%2F&usg=AOvVaw32nsoMdEDWyJ_cAtdjZ0oz&cshid=1670929115779122), [JSON formatter and validator](https://jsonformatter.curiousconcept.com/)…)
 * The configuration values refer to non-existing information like a non-existing diagram in the UML file, a non-existing template, etc.

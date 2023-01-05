@@ -107,14 +107,14 @@ Having created a new property in UC2, there is a need to inform readers of the n
 5. Open the core-person-ap-test_en.j2 and change the change log section with the following text and save the file:
 
 	```
-	{% raw %}{% block changelog %}{% endraw %}
+	{% block changelog %}
 	<p>
 	The new property "baptsimal name" has been added.
 	<p>
-	{% raw %}{% endblock %}{% endraw %}
+	{% endblock %}
 	```
 
-    Notice the {% raw %}{% block changelog %}{% endraw %} at the beginning and the {% raw %}{% endblock %}{% endraw %} at the end to enclose the changelog block that will be used by a generic template.
+    Notice the {% block changelog %} at the beginning and the % endblock %} at the end to enclose the changelog block that will be used by a generic template.
 
 6. Commit and push the files changed in the SEMIC thema repository
 7. Pull the latest code from the SEMIC publication repository

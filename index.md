@@ -316,12 +316,12 @@ When a specification is officially released, the persistent URI is maintained as
     2. Commit and push the changes to the SEMIC proxy repository
 3. The toolchain developer will enable the persistent URI by entering the Persistence Service machine via SSH client and perform the following commands:
 
-| Command                | Description                                          |
-|------------------------|------------------------------------------------------| 
-| cd uri.semic.eu-proxy/ | Enter in the folder of the SEMIC proxy repository    |
-| git pull               | Insert the GitHub username and personal access token |
-| make nginx             | Create a new version of the nginx web server         |
-| make run               | Run the nginx web server                             |
+    | Command                | Description                                          |
+    |------------------------|------------------------------------------------------| 
+    | cd uri.semic.eu-proxy/ | Enter in the folder of the SEMIC proxy repository    |
+    | git pull               | Insert the GitHub username and personal access token |
+    | make nginx             | Create a new version of the nginx web server         |
+    | make run               | Run the nginx web server                             |
 
 **Test the result**
 

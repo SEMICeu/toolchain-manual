@@ -1,4 +1,4 @@
-#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Extend an existing model >>>](extend_existing_data_model.md)
+#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Updating the UML data model >>>](updating_UML_data_model.md)
 
 ## Task: Extend an existing data model
 
@@ -69,4 +69,4 @@ Once the publication process ended, pull the latest code from the SEMIC generate
 * A “shacl” folder containing the SHACL shape files in turtle and JSON-LD
 * A “xsd” folder containing the XML schema files
 
-#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Extend an existing model >>>](extend_existing_data_model.md)
+#### [<<< Previous page: User Manual ](README.md) --- [Next page: Task-Updating the UML data model >>>](updating_UML_data_model.md)

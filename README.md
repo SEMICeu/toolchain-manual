@@ -79,8 +79,7 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 		<li>The template folder, including templates, per language, to change the specific layout of HTML specification</li>
 		<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification</li>
 		<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li>
-	</ul>
-   </td>
+	</ul></td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-publication">SEMIC publication</a></td>
@@ -90,8 +89,7 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 		<li>The config folder, including the main JSON publication file under the config/dev folder</li>
 		<li>.circleci folder, including the configuration file of the CircleCI pipeline</li>
 	</li>
-	</ul>
-   </td>
+	</ul></td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-generated">SEMIC generated</a></td>
@@ -99,24 +97,21 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 	<ul>
 		<li>The report folder which contains the logs of the execution of the CircleCI pipeline</li>
 		<li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD</li>
-	</ul>
-   </td>
+	</ul></td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-puris">SEMIC puri</a></td>
    <td>This repository mainly contains:
 	<ul>
 		<li>The release folder which contains, for each namespace, the RDF associated the respective URI</li>
-	</ul>
-   </td>
+	</ul></td>
   </tr>
   <tr>
    <td><a href="https://github.com/SEMICeu/uri.semic.eu-proxy">SEMIC proxy</a></td>
    <td>This repository mainly contains:
 	<ul>
 		<li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection</li>
-	</ul>
-   </td>
+	</ul></td>
   </tr>
 </table>
 
@@ -126,390 +121,216 @@ In the below table the reader can find a summary of the repositories used, the r
 
 <table>
   <tr>
-   <td><strong>Repositories</strong>
-   </td>
-   <td><strong>UC1</strong>
-   </td>
-   <td><strong>UC2</strong>
-   </td>
-   <td><strong>UC3</strong>
-   </td>
-   <td><strong>UC4</strong>
-   </td>
-   <td><strong>UC5</strong>
-   </td>
-   <td><strong>UC6</strong>
-   </td>
-   <td><strong>UC7</strong>
-   </td>
-   <td><strong>UC8</strong>
-   </td>
-   <td><strong>UC9</strong>
-   </td>
+   <td><strong>Repositories</strong></td>
+   <td><strong>UC1</strong></td>
+   <td><strong>UC2</strong></td>
+   <td><strong>UC3</strong></td>
+   <td><strong>UC4</strong></td>
+   <td><strong>UC5</strong></td>
+   <td><strong>UC6</strong></td>
+   <td><strong>UC7</strong></td>
+   <td><strong>UC8</strong></td>
+   <td><strong>UC9</strong></td>
   </tr>
   <tr>
-   <td>SEMIC thema
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>SEMIC thema</td>
+   <td>X</td>
+   <td>X</td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>SEMIC publication
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>SEMIC publication</td>
+   <td>X</td>
+   <td>X</td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>SEMIC generated
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>SEMIC generated</td>
+   <td>X</td>
+   <td>X</td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>SEMIC puri
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>SEMIC puri</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>SEMIC proxy
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>SEMIC proxy</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td><strong>Roles</strong>
-   </td>
-   <td colspan="9">
-   </td>
+   <td><strong>Roles</strong></td>
+   <td colspan="9"></td>
   </tr>
   <tr>
-   <td>Editor
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
+   <td>Editor</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>Toolchain developer
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>Toolchain developer</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
     <tr>
-   <td><strong>Tools</strong>
-   </td>
-   <td colspan="9">
-   </td>
+   <td><strong>Tools</strong></td>
+   <td colspan="9"></td>
   </tr>
   <tr>
-   <td>Git client
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>Git client</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>Text editor
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>Text editor</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>Web browser
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>Web browser</td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
-   <td>Enterprise Architect
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>Enterprise Architect</td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>HTTP client
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>HTTP client</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>SSH client
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>SSH client</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>Linux Terminal
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>Linux Terminal</td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>DockerHub
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
+   <td>DockerHub</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td></td>
+   <td></td>
   </tr>
   <tr>
-   <td>CircleCI
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
-   <td>X
-   </td>
+   <td>CircleCI</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
   </tr>
 </table>
 

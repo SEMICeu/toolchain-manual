@@ -43,18 +43,18 @@ When a specification is officially released, the persistent URI is maintained as
     1. Under releases/m8g folder, create 3 empty files: baptsimalName.nt, baptsimalName.rdf and baptsimalName.ttl
     2. Open with a text editor the baptsimalName.ttl and type the following:
 
-	```
-	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+		```
+		@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-	<http://data.europa.eu/m8g/baptsimalName>
-		a rdf:Property, <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
-		 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  
-	<http://data.europa.eu/m8g> ;
-		<http://www.w3.org/2004/02/skos/core#scopeNote> "the name given by Christians."@en ;
-	  <http://www.w3.org/2000/01/rdf-schema#label> "baptsimal name"@en .
-	```
+		<http://data.europa.eu/m8g/baptsimalName>
+			a rdf:Property, <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+			 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  
+		<http://data.europa.eu/m8g> ;
+			<http://www.w3.org/2004/02/skos/core#scopeNote> "the name given by Christians."@en ;
+		  <http://www.w3.org/2000/01/rdf-schema#label> "baptsimal name"@en .
+		```
 
-    And save the file.
+		And save the file.
 
     3. For the other 2 formats, either they are typed manually or they can be generated with automatic tools such as [EasyRDF](https://www.easyrdf.org/converter), [RDF translator](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwwrnOtvb7AhUN2xoKHVyPCh0QFnoECBEQAQ&url=https%3A%2F%2Frdf-translator.appspot.com%2F&usg=AOvVaw1My-fDwxW5-ZC29xHa5JQy), [RDF validator](http://rdfvalidator.mybluemix.net/)… 
     4. Commit and push the changes in the SEMIC puri repository

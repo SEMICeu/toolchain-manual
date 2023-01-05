@@ -1,3 +1,5 @@
+#### [<<< Previous page: Task-Managing Persistent URIs ](managing_persistent_URIs.md) --- [Next page: Task-Deploy new software releases >>>](deploy_new_software_releases.md)
+
 ## Task: Editing HTML specifications
 
 ### UC4: Update the publication metadata of the specification
@@ -170,11 +172,6 @@ In order to reflect the style of the organisation creating the new specification
 	{% extends "semic_core_voc_test.j2" %}
 	```
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: Definition &darr;&darr; outside of definition list. Missing preceding term(s)? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-:
-
 3. Commit and push the files changed in the SEMIC thema repository
 4. Pull the latest code from the SEMIC publication repository
 5. Go under the “templates” folder and duplicate the generic template semic_core_voc.j2 file to semic_core_voc_test.j2 file.
@@ -203,3 +200,5 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 Open the index.html with a browser and verify that the colour of the hyperlinks has been correctly updated.
 
 ![alt_text](images/image8.png "image_tooltip")
+
+#### [<<< Previous page: Task-Managing Persistent URIs ](managing_persistent_URIs.md) --- [Next page: Task-Deploy new software releases >>>](deploy_new_software_releases.md)

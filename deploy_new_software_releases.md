@@ -1,5 +1,7 @@
-## Task: Deploy new software releases
+#### [<<< Previous page:  Task-Editing HTML specifications ](editing_HTML_specifications.md) --- [Next page: Task-Customise the publication process >>>](customise_publication_process.md)
 
+
+## Task: Deploy new software releases
 
 ### UC7: Activate a new release of transformation software in the toolchain
 
@@ -15,13 +17,9 @@ Within this use case, the objective is to change the toolchain so that it will u
 
 **Roles involved**
 
-
-
 * A toolchain developer that wants to update the toolchain to the new release of the transformation software.
 
 **Prior Knowledge**
-
-
 
 * How to build and run Docker container images
 * Being able to read Docker container images specification (i.e. Dockerfile), and in particular understand how Docker images are interconnected with each other
@@ -32,14 +30,10 @@ Within this use case, the objective is to change the toolchain so that it will u
 
 **Repositories**
 
-
-
 * SEMIC publication repository, to access  the CircleCI configuration file
 * SEMIC generated repository, to verify removal of the generated examples
 
 **Tools**
-
-
 
 * A Git client to pull, commit and push to the repositories
 * An text editor, to edit the CircleCI configuration
@@ -47,8 +41,6 @@ Within this use case, the objective is to change the toolchain so that it will u
 * Docker Hub ([https://hub.docker.com/](https://hub.docker.com/)) as image repository distributing the toolchain Docker images 
 
 **Steps**
-
-
 
 1. Pull the latest code from the SEMIC publication repository
 2. Open with the text editor the CircleCI configuration (file .circleci/config.yml)
@@ -64,10 +56,10 @@ In the CircleCI web interface one can see the execution of the toolchain. If the
 
 Otherwise the execution will halt at the step with an error. Resolving errors can happen in numerous ways: 
 
-
-
 * by inspecting the logs in the CircleCI web interface;
 * by rerunning the failed step via the CircleCI web interface with an temporary ssh connection and debugging the situation on a real execution state;
 * Reverting back to the original software by resetting the Docker image tag to the original value.
 
 (NOTE) Despite it may be needed to resolve an issue for one data specification, updating software releases is a global change for the toolchain. It impacts all current and future creations of data specifications specified in the SEMIC publication repository. Therefore such changes should be communicated to all editors.
+
+#### [<<< Previous page:  Task-Editing HTML specifications ](editing_HTML_specifications.md) --- [Next page: Task-Customise the publication process >>>](customise_publication_process.md)

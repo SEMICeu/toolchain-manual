@@ -56,7 +56,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="deploy_new_software_releases.md">Deploy new software releases</a></td>
-   <td>UC7</td>
+   <td><a href="deploy_new_software_releases.md#uc7-activate-a-new-release-of-transformation-software-in-the-toolchain">UC7</a></td>
   </tr>
   <tr>
    <td><a href="customise_publication_process.md">Customise the publication process</a></td>

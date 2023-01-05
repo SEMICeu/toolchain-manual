@@ -127,7 +127,7 @@ In the below table the reader can find a summary of the repositories used, the r
 
 <table>
   <tr>
-   <td><strong>Repositories / roles / tools</strong>
+   <td><strong>Repositories</strong>
    </td>
    <td><strong>UC1</strong>
    </td>
@@ -306,6 +306,12 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X
    </td>
    <td>X
+   </td>
+  </tr>
+    <tr>
+   <td><strong>Tools</strong>
+   </td>
+   <td colspan="9">
    </td>
   </tr>
   <tr>
@@ -504,10 +510,6 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X
    </td>
    <td>X
-   </td>
-  </tr>
-  <tr>
-   <td colspan="10" >Table 3: View of Tools, Roles and Repositories needed to execute each use case
    </td>
   </tr>
 </table>

@@ -44,7 +44,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="updating_UML_data_model.md">Updating the UML data model</a></td>
-   <td>UC2</td>
+   <td><a href="updating_UML_data_model.md#uc2-adding-a-new-property-in-an-existing-class">UC2</a></td>
   </tr>
   <tr>
    <td><a href="managing_persistent_URIs.md">Managing Persistent URIs</a></td>

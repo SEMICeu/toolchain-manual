@@ -105,7 +105,7 @@ When a specification is officially released, the persistent URI is maintained as
     * by setting the Accept header to “rdf/xml”, it should get an answer in RDF/XML as saved in step 1.3
     * By setting the Accept header to “application/n-triples”, it should get an answer in N-Triples as saved in step 1.3
 
-![alt_text](images/image5.png "image_tooltip")
+	![alt_text](images/image5.png "image_tooltip")
 
 * For the HTML redirection, open the browser or the HTTP client and point to the URL [http://data.europa.eu/m8g/baptsimalName](http://data.europa.eu/m8g/baptsimalName), it should get redirected to the URL specified in step 2.1, pointing to the exact HTML section of the property
 

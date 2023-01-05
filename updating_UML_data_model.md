@@ -1,3 +1,5 @@
+#### [<<< Previous page: Task-Extend an existing model ](extend_existing_data_model.md) --- [Next page: Task-Managing Persistent URIs >>>](managing_persistent_URIs.md)
+
 ## Task: Updating the UML data model
 
 ### UC2: Adding a new property in an existing class
@@ -46,15 +48,15 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 5. Next define the Type “Text” to be selected from the drop-down menu “Select Type…” under “Core Vocabulary” package
 6. Select the Scope “Public”
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image1.png "Adding attribute")
 
 7. In the “Attribute Properties” ribbon, look for the Multiplicity property and select the default value “[1]”, double click on it and select Lower bound to 0 and Upper bound *, click OK
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image2.png "Set the multiplicity")
 
 8. In the “Tagged Values” ribbon, select the now empty “Attribute (baptsimalName)” section, click on “Add new tagged value” icon, in Tag type “label-en” with Value “baptismal name”, click OK
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image3.png "Set the label")
 
 9. Click again on “Add new tagged value” icon, in Tag type “definition-en” with Value “the name given by Christians”, click OK
 10. Click again on “Add new tagged value” icon, in Tag type “uri” with Value “http://data.europa.eu/m8g/baptismalName”, click OK
@@ -82,6 +84,6 @@ Once the publication process ended, pull the latest code from the SEMIC generate
 * The image “overview.jpg”, located in the html folder and linked from the index.html, has been updated including the new property
 * The new property appears under the Person class section in the index.html file, with the respective label, definition and multiplicity
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image4.png "Verify attribute is present in HTML page")
 
-* The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.)
+* The new property appears in the generated artefacts JSON-LD context, SHACL shapes, etc.

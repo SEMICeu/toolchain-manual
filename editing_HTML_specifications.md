@@ -61,7 +61,7 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the 2 properties have been correctly updated.
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image6.png "Verify that status and published date are updated")
 
 ### UC5: Adding a changelog section in the specification
 
@@ -93,9 +93,9 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
 **Steps**
 
-7. Pull the latest code from the SEMIC thema repository
-8. Open with a text editor the core-person-test.json under the config property
-9. Change the following line:
+1. Pull the latest code from the SEMIC thema repository
+2. Open with a text editor the core-person-test.json under the config property
+3. Change the following line:
 
 	```
 	 "template": "core-person-ap-test_en.j2",
@@ -103,8 +103,8 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
     Be careful to add a “,” character at the end of the line and save the file.
 
-10. Now go in the “template” folders and duplicate the core-person-ap_en.j2 file into core-person-ap-test_en.j2
-11. Open the core-person-ap-test_en.j2 and change the change log section with the following text and save the file:
+4. Now go in the “template” folders and duplicate the core-person-ap_en.j2 file into core-person-ap-test_en.j2
+5. Open the core-person-ap-test_en.j2 and change the change log section with the following text and save the file:
 
 	```
 	{% block changelog %}
@@ -116,9 +116,9 @@ Having created a new property in UC2, there is a need to inform readers of the n
 
     Notice the {% block changelog %} at the beginning and the {% endblock %} at the end to enclose the changelog block that will be used by a generic template.
 
-12. Commit and push the files changed in the SEMIC thema repository
-13. Pull the latest code from the SEMIC publication repository
-14. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
+6. Commit and push the files changed in the SEMIC thema repository
+7. Pull the latest code from the SEMIC publication repository
+8. Update the publication.json file in the SEMIC publication repository by changing the dummy value to
 
 	```
 	"dummy": "4",
@@ -132,7 +132,7 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the section change log has been correctly updated.
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image7.png "Verify that the change log section has been")
 
 ### UC6: Changing the colour of the hyperlinks
 
@@ -199,6 +199,6 @@ Once the publication process ends, pull the latest code from the SEMIC generated
 
 Open the index.html with a browser and verify that the colour of the hyperlinks has been correctly updated.
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image8.png "Verify that the colour of the hyperlinks is updated ")
 
 #### [<<< Previous page: Task-Managing Persistent URIs ](managing_persistent_URIs.md) --- [Next page: Task-Deploy new software releases >>>](deploy_new_software_releases.md)

@@ -37,7 +37,7 @@ During the publication process, multiple tasks are performed covering different 
 
 | Task  | Use cases |
 |---|---|
-| [Extend an existing data model](task-extend-an-existing-data-model)  |  UC1 |
+| [Extend an existing data model](#task-extend-an-existing-data-model)  |  UC1 |
 |   |   |
 |   |   |
 |   |   |
@@ -52,7 +52,7 @@ During the publication process, multiple tasks are performed covering different 
    </td>
   </tr>
   <tr>
-   <td>[Extend an existing data model](task-extend-an-existing-data-model)
+   <td>[Extend an existing data model](#task-extend-an-existing-data-model)
    </td>
    <td>UC1
    </td>

@@ -40,7 +40,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="extend_existing_data_model.md">Extend an existing data model</a></td>
-   <td>UC1</td>
+   <td><a href="extend_existing_data_model.md#uc1-create-a-new-core-person">UC1</a></td>
   </tr>
   <tr>
    <td><a href="updating_UML_data_model.md">Updating the UML data model</a></td>

@@ -14,6 +14,10 @@
     box-shadow: -0.1em 0 0.25em rgb(0 0 0 / 10%) inset;
 }
 
+.toc > ul {
+	padding-inline-start: 10px;
+}
+
 .toc > ul > li {
     margin: 1rem 0;
     font-weight: bold;

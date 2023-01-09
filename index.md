@@ -1,5 +1,9 @@
 # ​Toolchain for Publishing Data Specifications -  User Manual by SEMIC
 
+* **Release:** 1.0.0
+* **Published at:** 09/01/2023
+* **License:** [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+* **Feedback at:** https://github.com/SEMICeu/toolchain-manual/issues 
 
 [[TOC]]
 

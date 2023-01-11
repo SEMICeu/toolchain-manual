@@ -56,11 +56,11 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 
 | Repository | Description |
 |---|---|
-| SEMIC thema | This repository mainly contains:<ul><li>EAP files, to be opened by Enterprise Architect to change the data models<li>The template folder, including templates, per language, to change the specific layout of HTML specification<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li></ul> |
-| SEMIC publication | This repository mainly contains:<ul><li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository<li>The config folder, including the main JSON publication file under the config/dev folder<li>.circleci folder, including the configuration file of the CircleCI pipeline</li></ul> |
-| SEMIC generated | This repository mainly contains:<ul><li>The report folder which contains the logs of the execution of the CircleCI pipeline<li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD</li></ul> |
-| SEMIC puri | This repository mainly contains:<ul><li>The release folder which contains, for each namespace, the RDF associated the respective URI</li></ul> |
-| SEMIC proxy | This repository mainly contains:<ul><li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection</li></ul> |
+| <a href="https://github.com/SEMICeu/uri.semic.eu-thema">SEMIC thema</a> | This repository mainly contains:<ul><li>EAP files, to be opened by Enterprise Architect to change the data models<li>The template folder, including templates, per language, to change the specific layout of HTML specification<li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification<li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li></ul> |
+| <a href="https://github.com/SEMICeu/uri.semic.eu-publication">SEMIC publication</a> | This repository mainly contains:<ul><li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository<li>The config folder, including the main JSON publication file under the config/dev folder<li>.circleci folder, including the configuration file of the CircleCI pipeline</li></ul> |
+| <a href="https://github.com/SEMICeu/uri.semic.eu-generated">SEMIC generated</a> | This repository mainly contains:<ul><li>The report folder which contains the logs of the execution of the CircleCI pipeline<li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD</li></ul> |
+| <a href="https://github.com/SEMICeu/uri.semic.eu-puris">SEMIC puri</a> | This repository mainly contains:<ul><li>The release folder which contains, for each namespace, the RDF associated the respective URI</li></ul> |
+| <a href="https://github.com/SEMICeu/uri.semic.eu-proxy">SEMIC proxy</a> | This repository mainly contains:<ul><li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection</li></ul> |
 
 In below table the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
 
@@ -182,7 +182,7 @@ In the Core Person Test, there is a need to add “baptismal name” property wi
 **Prior Knowledge**
 
 * How to pull, commit and push in a Git repository
-* UML modelling and semantic model
+* UML modelling and semantic model, see the [Data model](https://github.com/SEMICeu/documentation/blob/main/datamodel.md) section
 * Be able to understand a JSON structure to edit configuration files
 * Be able to understand a RDF file such as JSON-LD context and SHACL shapes
 
@@ -268,7 +268,7 @@ When a specification is officially released, the persistent URI is maintained as
 **Prior Knowledge**
 
 * How to pull, commit and push in a Git repository
-* Be knowledgeable about Persistent URI
+* Having read the [Persistent URI documentation](https://github.com/SEMICeu/documentation/blob/main/puri.md)
 * For RDF redirection:
     * Be able to understand a RDF file in the formats Turtle, RDF/XML or N-Triples
 * For HTML redirection:
@@ -588,7 +588,7 @@ Within this use case, the objective is to change the toolchain so that it will u
 
 1. Pull the latest code from the SEMIC publication repository
 2. Open with the text editor the CircleCI configuration (file .circleci/config.yml)
-3. Find the image declaration of the software that is to be upgraded within the configuation file
+3. Find the image declaration of the software that is to be upgraded : [https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115](https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115)
 4. Login into DockerHub and search for the image informatievlaanderen/oslo-ea-to-rdf
 5. Find the tag that corresponds with the to-be deployed release, i.e. [json-ld-format-m1.1.3](https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo)
 6. Change in the Docker image tag at line 115 in the CircleCI configuration file to the selected release
@@ -651,13 +651,13 @@ Part 1 - enable examples being generated for a specification
 
     Commit and push to the SEMIC publication repository
 
-4. Verify in the SEMIC generated repository that the examples are created
+4. Verify in the SEMIC generated repository that the examples are created (see https://github.com/SEMICeu/uri.semic.eu-generated/tree/master/examples/core-person-test)
 5. In the web interface of CircleCI the latest execution trace should mention a step in the visualised workflow called “render-example-templates”.
 
 Part 2 - adapt the workflow to not generate the examples.
 
 6. Open with the text editor the CircleCI configuration (file .circleci/config.yml) within the SEMIC publication repository
-7. Outcomment the lines 566-568 by putting a # symbol as the first character of each line
+7. Outcomment the lines 566-568 ([https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566](https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566)) by putting a # symbol as the first character of each line
 8. Outcomment line 601 (#- `render-example-templates)`
 9. Commit and push the change to the SEMIC publication repository
 10. Select in the SEMIC generated repository a data specification that has NO examples yet

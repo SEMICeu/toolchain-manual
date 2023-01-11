@@ -1054,23 +1054,23 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 </thead>
 <tbody data-line="58" class="code-line" dir="auto">
 <tr data-line="58" class="code-line" dir="auto">
-<td>SEMIC thema</td>
+<td><a href="https://github.com/SEMICeu/uri.semic.eu-thema">SEMIC thema</a></td>
 <td>This repository mainly contains:<ul><li>EAP files, to be opened by Enterprise Architect to change the data models</li><li>The template folder, including templates, per language, to change the specific layout of HTML specification</li><li>Site-skeleton folder, including the screenshot of each data model and the logo, to be include in the HTML specification</li><li>The config folder, including the JSON configuration file per data model to change various parameters for the publication process</li></ul></td>
 </tr>
 <tr data-line="59" class="code-line" dir="auto">
-<td>SEMIC publication</td>
+<td><a href="https://github.com/SEMICeu/uri.semic.eu-publication">SEMIC publication</a></td>
 <td>This repository mainly contains:<ul><li>The template folder, including generic template that can be reused and customised by the template in the SEMIC thema repository</li><li>The config folder, including the main JSON publication file under the config/dev folder</li><li>.circleci folder, including the configuration file of the CircleCI pipeline</li></ul></td>
 </tr>
 <tr data-line="60" class="code-line" dir="auto">
-<td>SEMIC generated</td>
+<td><a href="https://github.com/SEMICeu/uri.semic.eu-generated">SEMIC generated</a></td>
 <td>This repository mainly contains:<ul><li>The report folder which contains the logs of the execution of the CircleCI pipeline</li><li>The doc folder, which contains the artefacts generated for each specification including the HTML specification, JSON-LD context, SHACL shapes and XSD</li></ul></td>
 </tr>
 <tr data-line="61" class="code-line" dir="auto">
-<td>SEMIC puri</td>
+<td><a href="https://github.com/SEMICeu/uri.semic.eu-puris">SEMIC puri</a></td>
 <td>This repository mainly contains:<ul><li>The release folder which contains, for each namespace, the RDF associated the respective URI</li></ul></td>
 </tr>
 <tr data-line="62" class="code-line" dir="auto">
-<td>SEMIC proxy</td>
+<td><a href="https://github.com/SEMICeu/uri.semic.eu-proxy">SEMIC proxy</a></td>
 <td>This repository mainly contains:<ul><li>The configurations for the PURI service, in particular the htmlmap.lua which perform the HTML redirection</li></ul></td>
 </tr>
 </tbody>
@@ -1400,7 +1400,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 <p data-line="181" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
 <ul data-line="183" class="code-line" dir="auto">
 <li data-line="183" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="184" class="code-line" dir="auto">UML modelling and semantic model</li>
+<li data-line="184" class="code-line" dir="auto">UML modelling and semantic model, see the <a href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md" data-href="https://github.com/SEMICeu/documentation/blob/main/datamodel.md">Data model</a> section</li>
 <li data-line="185" class="code-line" dir="auto">Be able to understand a JSON structure to edit configuration files</li>
 <li data-line="186" class="code-line" dir="auto">Be able to understand a RDF file such as JSON-LD context and SHACL shapes</li>
 </ul>
@@ -1497,7 +1497,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 <p data-line="267" class="code-line" dir="auto"><strong>Prior Knowledge</strong></p>
 <ul data-line="269" class="code-line" dir="auto">
 <li data-line="269" class="code-line" dir="auto">How to pull, commit and push in a Git repository</li>
-<li data-line="270" class="code-line" dir="auto">Be knowledgeable about Persistent URI</li>
+<li data-line="270" class="code-line" dir="auto">Having read the <a href="https://github.com/SEMICeu/documentation/blob/main/puri.md" data-href="https://github.com/SEMICeu/documentation/blob/main/puri.md">Persistent URI documentation</a></li>
 <li data-line="271" class="code-line" dir="auto">For RDF redirection:
 <ul data-line="272" class="code-line" dir="auto">
 <li data-line="272" class="code-line" dir="auto">Be able to understand a RDF file in the formats Turtle, RDF/XML or N-Triples</li>
@@ -1851,7 +1851,7 @@ color: #00cc23;
 <ol data-line="588" class="code-line" dir="auto">
 <li data-line="588" class="code-line" dir="auto">Pull the latest code from the SEMIC publication repository</li>
 <li data-line="589" class="code-line" dir="auto">Open with the text editor the CircleCI configuration (file .circleci/config.yml)</li>
-<li data-line="590" class="code-line" dir="auto">Find the image declaration of the software that is to be upgraded within the configuation file</li>
+<li data-line="590" class="code-line" dir="auto">Find the image declaration of the software that is to be upgraded : <a href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115" data-href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115">https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L115</a></li>
 <li data-line="591" class="code-line" dir="auto">Login into DockerHub and search for the image informatievlaanderen/oslo-ea-to-rdf</li>
 <li data-line="592" class="code-line" dir="auto">Find the tag that corresponds with the to-be deployed release, i.e. <a href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo" data-href="https://hub.docker.com/layers/informatievlaanderen/oslo-ea-to-rdf/json-ld-format-m1.1.3/images/sha256-4f860f868acc64ddc94da9943cfca78240d15b4911ff9ef5bac835ab5876639e?context=repo">json-ld-format-m1.1.3</a></li>
 <li data-line="593" class="code-line" dir="auto">Change in the Docker image tag at line 115 in the CircleCI configuration file to the selected release</li>
@@ -1908,7 +1908,7 @@ color: #00cc23;
 <p data-line="651" class="code-line" dir="auto">Commit and push to the SEMIC publication repository</p>
 </li>
 <li data-line="653" class="code-line" dir="auto">
-<p data-line="653" class="code-line" dir="auto">Verify in the SEMIC generated repository that the examples are created</p>
+<p data-line="653" class="code-line" dir="auto">Verify in the SEMIC generated repository that the examples are created (see <a href="https://github.com/SEMICeu/uri.semic.eu-generated/tree/master/examples/core-person-test" data-href="https://github.com/SEMICeu/uri.semic.eu-generated/tree/master/examples/core-person-test">https://github.com/SEMICeu/uri.semic.eu-generated/tree/master/examples/core-person-test</a>)</p>
 </li>
 <li data-line="654" class="code-line" dir="auto">
 <p data-line="654" class="code-line" dir="auto">In the web interface of CircleCI the latest execution trace should mention a step in the visualised workflow called “render-example-templates”.</p>
@@ -1920,7 +1920,7 @@ color: #00cc23;
 <p data-line="658" class="code-line" dir="auto">Open with the text editor the CircleCI configuration (file .circleci/config.yml) within the SEMIC publication repository</p>
 </li>
 <li data-line="659" class="code-line" dir="auto">
-<p data-line="659" class="code-line" dir="auto">Outcomment the lines 566-568 by putting a # symbol as the first character of each line</p>
+<p data-line="659" class="code-line" dir="auto">Outcomment the lines 566-568 (<a href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566" data-href="https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566">https://github.com/SEMICeu/uri.semic.eu-publication/blob/master/.circleci/config.yml#L566</a>) by putting a # symbol as the first character of each line</p>
 </li>
 <li data-line="660" class="code-line" dir="auto">
 <p data-line="660" class="code-line" dir="auto">Outcomment line 601 (#- <code>render-example-templates)</code></p>

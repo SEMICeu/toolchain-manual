@@ -194,37 +194,40 @@ Fork the current toolchain in separated repositories on GitHub and configure Cir
 3. Create a new repository “MyGenRepo” by initializing it and create a branch “master”.
 4. Open Puttygen and create 3 couple of public/private keys, one for each repository, saving the public key (e.g. mythema.pub), the private key (e.g. mythema.ppk) and converting the private key to OPENSSH format (e.g. mythema.ssh):
 
-![alt_text](images/image9.png "Create public and private keys with Puttygen")
+![alt_text](images/image9.jpg "Create public and private keys with Puttygen")
 
 5. Deploy the public keys in OPENSSH format in the MyThemaRepo and MyGenRepo:
 
-![alt_text](images/image10.png "Deploy public keys on GitHub repositories")
+![alt_text](images/image10.jpg "Deploy public keys on GitHub repositories")
 
-6. Login to CircleCi with the GitHub account and select MyPublicationRepo in Projects and press “Setup Up Project” button. Within the new windows select the repository and the branch “master” so that it can be found by CircleCi.
+6. Login to CircleCi with the GitHub account and select MyPublicationRepo in Projects and press “Setup Up Project” button. Within the new windows select the repository and the branch “master” so that it can be found by CircleCi:
+
+![alt_text](images/image11.jpg "Add SSH keys in CircleCI ")
+
 7. Open the Project Settings of MyPublicationRepo, click in the SSH keys menu and scroll down to add Additional SSH Keys. Upload the content of the 3 private OPENSSH keys using “github.com” as hostname:
 
-![alt_text](images/image11.png "Add SSH keys in CircleCI ")
+![alt_text](images/image12.jpg "Add SSH keys in CircleCI ")
 
 When uploading the keys, take note of the fingerprint associated to each key or alternatively you can use puttygen to load a private key and with the “Key” menu, select “show fingerprint as MD5” and the fingerprint associated to key is displayed:
 
-![alt_text](images/image12.png "Get fingerprint with Puttygen")
+![alt_text](images/image13.jpg "Get fingerprint with Puttygen")
 
 8. In the GitHub Desktop, clone the MyPublicationRepo locally and open the “config.yml” under the folder “.circleci” folder with a text editor.
 9. Replace the 3 fingerprints in the config.yml:
  
-![alt_text](images/image13.png "Replace fingeprints in the config.yml")
+![alt_text](images/image14.jpg "Replace fingeprints in the config.yml")
 
 10. Replace the fingerprint of MyGenRepo OPENSSH key down in the file that is under the create-artifact task:
 
-![alt_text](images/image14.png "Replace fingeprint of MyGenRepo in the config.yml")
+![alt_text](images/image15.jpg "Replace fingeprint of MyGenRepo in the config.yml")
 
 11. Update the GitHub repository of the create-artifact task at the bottom of the config.yml file:
 
-![alt_text](images/image15.png "Update GitHb repository of create-artifact task")
+![alt_text](images/image16.jpg "Update GitHb repository of create-artifact task")
 
 12. Open the file “publication.json” under the folder “config/dev”, and simplify it just leaving the configuration for Core Person test and updating the repository like in the image:
 
-![alt_text](images/image16.png "Simplify publication.json")
+![alt_text](images/image17.jpg "Simplify publication.json")
 
 13. Commit and push the changed files (config.yml and publication.json) into the MyPublicationRepo repository:
 
@@ -232,6 +235,6 @@ When uploading the keys, take note of the fingerprint associated to each key or 
 
 Verify that the CircleCI execution succeeded and that the files the are generated in the MyGenRepo:
 
-![alt_text](images/image17.png "Verify files are generated")
+![alt_text](images/image18.jpg "Verify files are generated")
 
 #### [<<< Previous page: Task-Deploy new software releases ](deploy_new_software_releases.md)

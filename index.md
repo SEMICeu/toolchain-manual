@@ -762,3 +762,80 @@ In case of errors, consult the CircleCI web interface to find the step that caus
 * The JSON configuration files are not in the proper JSON syntax. In this case, a JSON formatter can be used (e.g., [jq](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj5tpDpt_b7AhVhgc4BHTWBBXIQFnoECA8QAQ&url=https%3A%2F%2Fjqplay.org%2F&usg=AOvVaw32nsoMdEDWyJ_cAtdjZ0oz&cshid=1670929115779122), [JSON formatter and validator](https://jsonformatter.curiousconcept.com/)…)
 * The configuration values refer to non-existing information like a non-existing diagram in the UML file, a non-existing template, etc.
 * Usage of  special characters and whitespace characters may also be a source of problems,  but these are usually part of the data specification content. While these are the editors responsibility, the toolchain developer might be involved to find the exact source of these.
+
+### UC10: Creating a new full Toolchain
+
+**Objective**
+
+Fork the current toolchain in separated repositories on GitHub and configure CircleCI to run the new toolchain.
+
+**Roles involved**
+
+* A toolchain developer that needs to set up a CircleCI configuration and create the repositories 
+
+**Prior Knowledge**
+
+* GitHub account with all necessary permissions
+* How to fork or create a repository on GitHub
+* Knowledge of git branches
+* Knowledge of private / public key
+
+**Repositories**
+
+* New SEMIC thema repository forked from SEMIC thema
+* New SEMIC publication repository, forked from SEMIC publication
+* New SEMIC generated repository, to verify the transformation outcome
+
+**Tools**
+
+* A Git client to pull, commit and push to the repositories such as [GitHub Desktop](https://desktop.github.com/)
+* An text editor, to edit configurations files, such as [Notepad++](https://notepad-plus-plus.org/downloads/)
+* A web browser to access [CircleCI web interface](https://circleci.com) to configure the toolchain
+* An OpenSSH key generator such as [Puttygen](https://www.puttygen.com/download-putty)
+
+**Steps**
+ 
+1. Fork the SEMIC Thema repository under the name “MyThemaRepo”.
+2. Fork the SEMIC Publication repository under the name “MyPublicationRepo”.
+3. Create a new repository “MyGenRepo” by initializing it and create a branch “master”.
+4. Open Puttygen and create 3 couple of public/private keys, one for each repository, saving the public key (e.g. mythema.pub), the private key (e.g. mythema.ppk) and converting the private key to OPENSSH format (e.g. mythema.ssh):
+
+![alt_text](images/image9.png "Create public and private keys with Puttygen")
+
+5. Deploy the public keys in OPENSSH format in the MyThemaRepo and MyGenRepo:
+
+![alt_text](images/image10.png "Deploy public keys on GitHub repositories")
+
+6. Login to CircleCi with the GitHub account and select MyPublicationRepo in Projects and press “Setup Up Project” button. Within the new windows select the repository and the branch “master” so that it can be found by CircleCi.
+7. Open the Project Settings of MyPublicationRepo, click in the SSH keys menu and scroll down to add Additional SSH Keys. Upload the content of the 3 private OPENSSH keys using “github.com” as hostname:
+
+![alt_text](images/image11.png "Add SSH keys in CircleCI ")
+
+When uploading the keys, take note of the fingerprint associated to each key or alternatively you can use puttygen to load a private key and with the “Key” menu, select “show fingerprint as MD5” and the fingerprint associated to key is displayed:
+
+![alt_text](images/image11.png "Get fingerprint with Puttygen")
+
+8. In the GitHub Desktop, clone the MyPublicationRepo locally and open the “config.yml” under the folder “.circleci” folder with a text editor.
+9. Replace the 3 fingerprints in the config.yml:
+ 
+![alt_text](images/image12.png "Replace fingeprints in the config.yml")
+
+10. Replace the fingerprint of MyGenRepo OPENSSH key down in the file that is under the create-artifact task:
+
+![alt_text](images/image13.png "Replace fingeprint of MyGenRepo in the config.yml")
+
+11. Update the GitHub repository of the create-artifact task at the bottom of the config.yml file:
+
+![alt_text](images/image14.png "Update GitHb repository of create-artifact task")
+
+12. Open the file “publication.json” under the folder “config/dev”, and simplify it just leaving the configuration for Core Person test and updating the repository like in the image:
+
+![alt_text](images/image14.png "Simplify publication.json")
+
+13. Commit and push the changed files (config.yml and publication.json) into the MyPublicationRepo repository:
+
+**Test the result**
+
+Verify that the CircleCI execution succeeded and that the files the are generated in the MyGenRepo:
+
+![alt_text](images/image15.png "Verify files are generated")

@@ -207,24 +207,24 @@ Fork the current toolchain in separated repositories on GitHub and configure Cir
 
 When uploading the keys, take note of the fingerprint associated to each key or alternatively you can use puttygen to load a private key and with the “Key” menu, select “show fingerprint as MD5” and the fingerprint associated to key is displayed:
 
-![alt_text](images/image11.png "Get fingerprint with Puttygen")
+![alt_text](images/image12.png "Get fingerprint with Puttygen")
 
 8. In the GitHub Desktop, clone the MyPublicationRepo locally and open the “config.yml” under the folder “.circleci” folder with a text editor.
 9. Replace the 3 fingerprints in the config.yml:
  
-![alt_text](images/image12.png "Replace fingeprints in the config.yml")
+![alt_text](images/image13.png "Replace fingeprints in the config.yml")
 
 10. Replace the fingerprint of MyGenRepo OPENSSH key down in the file that is under the create-artifact task:
 
-![alt_text](images/image13.png "Replace fingeprint of MyGenRepo in the config.yml")
+![alt_text](images/image14.png "Replace fingeprint of MyGenRepo in the config.yml")
 
 11. Update the GitHub repository of the create-artifact task at the bottom of the config.yml file:
 
-![alt_text](images/image14.png "Update GitHb repository of create-artifact task")
+![alt_text](images/image15.png "Update GitHb repository of create-artifact task")
 
 12. Open the file “publication.json” under the folder “config/dev”, and simplify it just leaving the configuration for Core Person test and updating the repository like in the image:
 
-![alt_text](images/image14.png "Simplify publication.json")
+![alt_text](images/image16.png "Simplify publication.json")
 
 13. Commit and push the changed files (config.yml and publication.json) into the MyPublicationRepo repository:
 
@@ -232,6 +232,6 @@ When uploading the keys, take note of the fingerprint associated to each key or 
 
 Verify that the CircleCI execution succeeded and that the files the are generated in the MyGenRepo:
 
-![alt_text](images/image15.png "Verify files are generated")
+![alt_text](images/image17.png "Verify files are generated")
 
 #### [<<< Previous page: Task-Deploy new software releases ](deploy_new_software_releases.md)

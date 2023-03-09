@@ -157,7 +157,7 @@ In case of errors, consult the CircleCI web interface to find the step that caus
 * The configuration values refer to non-existing information like a non-existing diagram in the UML file, a non-existing template, etc.
 * Usage of  special characters and whitespace characters may also be a source of problems,  but these are usually part of the data specification content. While these are the editors responsibility, the toolchain developer might be involved to find the exact source of these.
 
-### UC9: Creating a new full Toolchain
+### UC10: Creating a new full Toolchain
 
 **Objective**
 

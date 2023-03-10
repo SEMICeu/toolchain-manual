@@ -60,7 +60,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="customise_publication_process.md">Customise the publication process</a></td>
-   <td><a href="customise_publication_process.md#uc8-using-circleci-to-build-data-specifications">UC8</a>, <a href="customise_publication_process.md#uc9-initiating-a-new-semic-thema-repository">UC9</a></td>
+   <td><a href="customise_publication_process.md#uc8-using-circleci-to-build-data-specifications">UC8</a>, <a href="customise_publication_process.md#uc9-initiating-a-new-semic-thema-repository">UC9</a>, <a href="customise_publication_process.md#uc10-creating-a-new-full-toolchain">UC10</a></td>
   </tr>
 </table>
 
@@ -131,6 +131,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td><strong>UC7</strong></td>
    <td><strong>UC8</strong></td>
    <td><strong>UC9</strong></td>
+   <td><strong>UC10</strong></td>
   </tr>
   <tr>
    <td>SEMIC thema</td>
@@ -143,12 +144,14 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td></td>
+   <td>X</td>
   </tr>
   <tr>
    <td>SEMIC publication</td>
    <td>X</td>
    <td>X</td>
    <td></td>
+   <td>X</td>
    <td>X</td>
    <td>X</td>
    <td>X</td>
@@ -167,6 +170,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X</td>
    <td>X</td>
    <td>X</td>
+   <td></td>
   </tr>
   <tr>
    <td>SEMIC puri</td>
@@ -179,12 +183,14 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td></td>
+   <td></td>
   </tr>
   <tr>
    <td>SEMIC proxy</td>
    <td></td>
    <td></td>
    <td>X</td>
+   <td></td>
    <td></td>
    <td></td>
    <td></td>
@@ -207,6 +213,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td>X</td>
+   <td></td>
   </tr>
   <tr>
    <td>Toolchain developer</td>
@@ -219,6 +226,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X</td>
    <td>X</td>
    <td>X</td>
+   <td>X</td>
   </tr>
     <tr>
    <td><strong>Tools</strong></td>
@@ -226,6 +234,7 @@ In the below table the reader can find a summary of the repositories used, the r
   </tr>
   <tr>
    <td>Git client</td>
+   <td>X</td>
    <td>X</td>
    <td>X</td>
    <td>X</td>
@@ -247,10 +256,12 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X</td>
    <td>X</td>
    <td>X</td>
+   <td>X</td>
   </tr>
   <tr>
    <td>Web browser</td>
    <td></td>
+   <td>X</td>
    <td>X</td>
    <td>X</td>
    <td>X</td>
@@ -271,12 +282,14 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td></td>
+   <td></td>
   </tr>
   <tr>
    <td>HTTP client</td>
    <td></td>
    <td></td>
    <td>X</td>
+   <td></td>
    <td></td>
    <td></td>
    <td></td>
@@ -295,12 +308,27 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td></td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>Public / Private key generator</td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td>X</td>
   </tr>
   <tr>
    <td>Linux Terminal</td>
    <td></td>
    <td></td>
    <td>X</td>
+   <td></td>
    <td></td>
    <td></td>
    <td></td>
@@ -319,6 +347,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td>X</td>
    <td></td>
    <td></td>
+   <td></td>
   </tr>
   <tr>
    <td>CircleCI</td>
@@ -328,6 +357,7 @@ In the below table the reader can find a summary of the repositories used, the r
    <td></td>
    <td></td>
    <td></td>
+   <td>X</td>
    <td>X</td>
    <td>X</td>
    <td>X</td>

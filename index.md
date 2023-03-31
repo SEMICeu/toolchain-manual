@@ -890,6 +890,5 @@ Change a script to modify the XML namespace of the generated XSD
 
 Pull the generated repository, open the xsd folder of the model generated and verify that the XSD file includes the line (noticing that the xmlns and the targetNamespace are changed):
 
-	```
 	<xs:schema xmlns="https://data.europa.eu/m8g/myxml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/myxml/" ... 
-	```
+    

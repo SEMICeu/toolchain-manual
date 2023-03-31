@@ -60,7 +60,7 @@ During the publication process, multiple tasks are performed covering different 
   </tr>
   <tr>
    <td><a href="customise_publication_process.md">Customise the publication process</a></td>
-   <td><a href="customise_publication_process.md#uc8-using-circleci-to-build-data-specifications">UC8</a>, <a href="customise_publication_process.md#uc9-initiating-a-new-semic-thema-repository">UC9</a>, <a href="customise_publication_process.md#uc10-creating-a-new-full-toolchain">UC10</a>, <a href="customise_publication_process.md#uc11-change-the-script-to-modify-the-xml-namespac">UC11</a></td>
+   <td><a href="customise_publication_process.md#uc8-using-circleci-to-build-data-specifications">UC8</a>, <a href="customise_publication_process.md#uc9-initiating-a-new-semic-thema-repository">UC9</a>, <a href="customise_publication_process.md#uc10-creating-a-new-full-toolchain">UC10</a>, <a href="customise_publication_process.md#uc11-change-the-script-to-modify-the-xml-namespace">UC11</a></td>
   </tr>
 </table>
 

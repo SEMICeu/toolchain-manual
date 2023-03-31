@@ -237,4 +237,54 @@ Verify that the CircleCI execution succeeded and that the files the are generate
 
 ![alt_text](images/image18.jpg "Verify files are generated")
 
+### UC11: Change the script to modify the XML namespace
+
+**Objective**
+
+Change a script to modify the XML namespace of the generated XSD
+
+**Roles involved**
+
+* A toolchain developer that needs to customize the generated XSD
+
+**Prior Knowledge**
+
+* GitHub account with all necessary permissions
+
+**Repositories**
+
+* New SEMIC publication repository, forked from SEMIC publication, see [UC10](#uc10-creating-a-new-full-toolchain).
+* New SEMIC generated repository, to verify the transformation outcome, see [UC10](#uc10-creating-a-new-full-toolchain).
+
+**Tools**
+
+* A Git client to pull, commit and push to the repositories such as [GitHub Desktop](https://desktop.github.com/)
+* An text editor, to edit configurations files, such as [Notepad++](https://notepad-plus-plus.org/downloads/)
+
+**Steps**
+
+1. Pull the forked SEMIC publication repository
+2. In the scripts folder, open the render-details.sh file with a text editor
+3. Search for the following line:
+
+	```
+	XSDDOMAIN="https://data.europa.eu/m8g/xml/"
+	```
+
+4. Modify the line like the following:
+
+	```
+	XSDDOMAIN="https://data.europa.eu/m8g/myxml/"
+	```
+
+5. Commit and push the changed file
+
+**Test the result**
+
+Pull the generated repository, open the xsd folder of the model generated and verify that the XSD file includes the line (noticing that the xmlns and the targetNamespace are changed):
+
+	```
+	<xs:schema xmlns="https://data.europa.eu/m8g/myxml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/myxml/" ... 
+	```
+
 #### [<<< Previous page: Task-Deploy new software releases ](deploy_new_software_releases.md)

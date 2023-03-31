@@ -2,9 +2,9 @@
 
 <dl>
   <dt><strong>Release:</strong></dt>
-  <dd>1.0.0</dd>
+  <dd>1.0.1</dd>
   <dt><strong>Published at:</strong></dt>
-  <dd>09/01/2023</dd>
+  <dd>31/03/2023</dd>
   <dt><strong>Feedback at:</strong></dt>
   <dd><a href="https://github.com/SEMICeu/toolchain-manual/issues">https://github.com/SEMICeu/toolchain-manual/issues</a></dd>
 </dl>
@@ -50,7 +50,7 @@ During the publication process, multiple tasks are performed covering different 
 | [Managing Persistent URIs](#task-managing-persistent-uris)  | [UC3](#uc3-create-a-persistent-uri-for-a-new-property)  |
 | [Editing HTML specifications](#task-editing-html-specifications) | [UC4](#uc4-update-the-publication-metadata-of-the-specification) , [UC5](#uc5-adding-a-changelog-section-in-the-specification) , [UC6](#uc6-changing-the-colour-of-the-hyperlinks)    |
 | [Deploy new software releases](#task-deploy-new-software-releases)  | [UC7](#uc7-activate-a-new-release-of-transformation-software-in-the-toolchain)   |
-| [Customise the publication process](#task-customise-the-publication-process)  | [UC8](#uc8-using-circleci-to-build-data-specifications) , [UC9](#uc9-initiating-a-new-semic-thema-repository) , [UC10](#uc10-creating-a-new-full-toolchain)  |
+| [Customise the publication process](#task-customise-the-publication-process)  | [UC8](#uc8-using-circleci-to-build-data-specifications) , [UC9](#uc9-initiating-a-new-semic-thema-repository) , [UC10](#uc10-creating-a-new-full-toolchain), [UC11](#uc11-change-the-script-to-modify-the-xml-namespace)  |
 
 The Toolchain presented in this manual relies on a set of Github repositories, and are presented in the below table: 
 
@@ -64,27 +64,27 @@ The Toolchain presented in this manual relies on a set of Github repositories, a
 
 In below table the reader can find a summary of the repositories used, the roles involved and the tools needed per use case:
 
-| Repositories                 | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC8 | UC9 | UC10 |
-|------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|
-| SEMIC thema                  | X   | X   |     | X   | X   | X   |     |     |     | X    |
-| SEMIC publication            | X   | X   |     | X   | X   | X   | X   | X   | X   | X    |
-| SEMIC generated              | X   | X   |     | X   | X   | X   | X   | X   | X   |      |
-| SEMIC puri                   |     |     | X   |     |     |     |     |     |     |      |
-| SEMIC proxy                  |     |     | X   |     |     |     |     |     |     |      |
-| **Roles**                    |                                                            |
-| Editor                       | X   | X   | X   | X   | X   | X   |     |     | X   |      |
-| Toolchain developer          |     |     | X   |     |     |     | X   | X   | X   | X    |
-| **Tools**                    |                                                            |
-| Git client                   | X   | X   | X   | X   | X   | X   | X   | X   | X   | X    |
-| Text editor                  | X   | X   | X   | X   | X   | X   | X   | X   | X   | X    |
-| Web browser                  |     | X   | X   | X   | X   | X   | X   | X   | X   | X    |
-| Enterprise Architect         |     | X   |     |     |     |     |     |     |     |      |
-| HTTP client                  |     |     | X   |     |     |     |     |     |     |      |
-| SSH client                   |     |     | X   |     |     |     |     |     |     |      |
-| Public / Private key gen     |     |     |     |     |     |     |     |     |     | X    |
-| Linux Terminal               |     |     | X   |     |     |     |     |     |     |      |
-| DockerHub                    |     |     |     |     |     |     | X   |     |     |      | 
-| CircleCI                     |     |     |     |     |     |     | X   | X   | X   | X    |
+| Repositories                 | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC8 | UC9 | UC10 | UC11 |
+|------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|------|
+| SEMIC thema                  | X   | X   |     | X   | X   | X   |     |     |     | X    |      |
+| SEMIC publication            | X   | X   |     | X   | X   | X   | X   | X   | X   | X    | X    |
+| SEMIC generated              | X   | X   |     | X   | X   | X   | X   | X   | X   |      | X    |
+| SEMIC puri                   |     |     | X   |     |     |     |     |     |     |      |      |
+| SEMIC proxy                  |     |     | X   |     |     |     |     |     |     |      |      |
+| **Roles**                    |                                                                   |      
+| Editor                       | X   | X   | X   | X   | X   | X   |     |     | X   |      |      |
+| Toolchain developer          |     |     | X   |     |     |     | X   | X   | X   | X    | X    |
+| **Tools**                    |                                                                   |
+| Git client                   | X   | X   | X   | X   | X   | X   | X   | X   | X   | X    | X    |
+| Text editor                  | X   | X   | X   | X   | X   | X   | X   | X   | X   | X    | X    |
+| Web browser                  |     | X   | X   | X   | X   | X   | X   | X   | X   | X    |      |
+| Enterprise Architect         |     | X   |     |     |     |     |     |     |     |      |      |
+| HTTP client                  |     |     | X   |     |     |     |     |     |     |      |      |
+| SSH client                   |     |     | X   |     |     |     |     |     |     |      |      |
+| Public / Private key gen     |     |     |     |     |     |     |     |     |     | X    |      |
+| Linux Terminal               |     |     | X   |     |     |     |     |     |     |      |      |
+| DockerHub                    |     |     |     |     |     |     | X   |     |     |      |      |
+| CircleCI                     |     |     |     |     |     |     | X   | X   | X   | X    |      |
 
 As can be seen, most of the time the editor will use mainly the SEMIC thema, publication and generated repository for its operations. The editor and toolchain developer collaborate on UC3 to create and enable persistent URI’s and in UC9 to create a new SEMIC thema repository.
 
@@ -843,3 +843,53 @@ When uploading the keys, take note of the fingerprint associated to each key or 
 Verify that the CircleCI execution succeeded and that the files the are generated in the MyGenRepo:
 
 ![alt_text](images/image18.jpg "Verify files are generated")
+
+### UC11: Change the script to modify the XML namespace
+
+**Objective**
+
+Change a script to modify the XML namespace of the generated XSD
+
+**Roles involved**
+
+* A toolchain developer that needs to customize the generated XSD
+
+**Prior Knowledge**
+
+* GitHub account with all necessary permissions
+
+**Repositories**
+
+* New SEMIC publication repository, forked from SEMIC publication, see [UC10](#uc10-creating-a-new-full-toolchain).
+* New SEMIC generated repository, to verify the transformation outcome, see [UC10](#uc10-creating-a-new-full-toolchain).
+
+**Tools**
+
+* A Git client to pull, commit and push to the repositories such as [GitHub Desktop](https://desktop.github.com/)
+* An text editor, to edit configurations files, such as [Notepad++](https://notepad-plus-plus.org/downloads/)
+
+**Steps**
+
+1. Pull the forked SEMIC publication repository
+2. In the scripts folder, open the render-details.sh file with a text editor
+3. Search for the following line:
+
+	```
+	XSDDOMAIN="https://data.europa.eu/m8g/xml/"
+	```
+
+4. Modify the line like the following:
+
+	```
+	XSDDOMAIN="https://data.europa.eu/m8g/myxml/"
+	```
+
+5. Commit and push the changed file
+
+**Test the result**
+
+Pull the generated repository, open the xsd folder of the model generated and verify that the XSD file includes the line (noticing that the xmlns and the targetNamespace are changed):
+
+	```
+	<xs:schema xmlns="https://data.europa.eu/m8g/myxml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/myxml/" ... 
+	```

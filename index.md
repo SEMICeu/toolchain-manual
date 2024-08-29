@@ -2,9 +2,9 @@
 
 <dl>
   <dt><strong>Release:</strong></dt>
-  <dd>1.0.1</dd>
+  <dd>1.0.2</dd>
   <dt><strong>Published at:</strong></dt>
-  <dd>31/03/2023</dd>
+  <dd>29/08/2024</dd>
   <dt><strong>Feedback at:</strong></dt>
   <dd><a href="https://github.com/SEMICeu/toolchain-manual/issues">https://github.com/SEMICeu/toolchain-manual/issues</a></dd>
 </dl>
@@ -828,7 +828,7 @@ When uploading the keys, take note of the fingerprint associated to each key or 
 
 ![alt_text](images/image15.jpg "Replace fingeprint of MyGenRepo in the config.yml")
 
-11. Update the GitHub repository of the create-artifact task at the bottom of the config.yml file:
+11. Update the GitHub repository for the create-artifact task inside the config.json file within the config folder:
 
 ![alt_text](images/image16.jpg "Update GitHb repository of create-artifact task")
 

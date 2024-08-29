@@ -221,7 +221,7 @@ When uploading the keys, take note of the fingerprint associated to each key or 
 
 ![alt_text](images/image15.jpg "Replace fingeprint of MyGenRepo in the config.yml")
 
-11. Update the GitHub repository of the create-artifact task at the bottom of the config.yml file:
+11. Update the GitHub repository for the create-artifact task inside the config.json file within the config folder:
 
 ![alt_text](images/image16.jpg "Update GitHb repository of create-artifact task")
 

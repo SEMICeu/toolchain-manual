@@ -1,4 +1,4 @@
-.toc {
+.markdown-converter-toc {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -14,26 +14,26 @@
     box-shadow: -0.1em 0 0.25em rgb(0 0 0 / 10%) inset;
 }
 
-.toc > ul {
+.markdown-converter-toc > ul {
 	padding-inline-start: 10px;
 }
 
-.toc > ul > li {
+.markdown-converter-toc > ul > li {
     margin: 1rem 0;
     font-weight: bold;
 }
 
-.toc > ul > li li{
+.markdown-converter-toc > ul > li li{
     margin: 1rem 0;
     font-weight: normal;
 }
 
-.toc li {
+.markdown-converter-toc li {
     clear: both;
     list-style: none;
 }
 
-.toc a {
+.markdown-converter-toc a {
 padding: 0.1rem 1px 0;
     display: block;
     text-decoration: none;
@@ -43,18 +43,18 @@ padding: 0.1rem 1px 0;
     border-color: #3980b5;
 }
 
-.toc a:focus, .toc a:hover {
+.markdown-converter-toc a:focus, .markdown-converter-toc a:hover {
     background: rgba(75%, 75%, 75%, .25);
     border-bottom-width: 3px;
     margin-bottom: -2px;
 }
 
-.toc a:visited {
+.markdown-converter-toc a:visited {
     text-decoration-color: #054572;
     border-color: #054572;
 }
 
-.toc a:not(:focus):not(:hover) {
+.markdown-converter-toc a:not(:focus):not(:hover) {
     border-bottom-color: transparent;
 }
 

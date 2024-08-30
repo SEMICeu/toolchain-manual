@@ -1001,6 +1001,115 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 	color: var(--vscode-editorError-foreground);
 }
 </style>
+<style>.markdown-converter-toc {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 23.5em;
+    overflow: auto;
+    padding: 0 1em;
+    line-height: 1.1em;
+    color: black;
+    background: inherit;
+    background-color: #f7f8f9;
+    z-index: 1;
+    box-shadow: -0.1em 0 0.25em rgb(0 0 0 / 10%) inset;
+}
+
+.markdown-converter-toc > ul {
+	padding-inline-start: 10px;
+}
+
+.markdown-converter-toc > ul > li {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.markdown-converter-toc > ul > li li{
+    margin: 1rem 0;
+    font-weight: normal;
+}
+
+.markdown-converter-toc li {
+    clear: both;
+    list-style: none;
+}
+
+.markdown-converter-toc a {
+padding: 0.1rem 1px 0;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: black;
+    text-decoration-color: #3980b5;
+    border-color: #3980b5;
+}
+
+.markdown-converter-toc a:focus, .markdown-converter-toc a:hover {
+    background: rgba(75%, 75%, 75%, .25);
+    border-bottom-width: 3px;
+    margin-bottom: -2px;
+}
+
+.markdown-converter-toc a:visited {
+    text-decoration-color: #054572;
+    border-color: #054572;
+}
+
+.markdown-converter-toc a:not(:focus):not(:hover) {
+    border-bottom-color: transparent;
+}
+
+body {
+    padding-left: 26em;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: initial;
+}
+
+h1, h2, h3 {
+    color: #005a9c;
+    margin-top: 3rem;
+}
+
+pre {
+    color: black;
+    counter-increment: example;
+    clear: both;
+    padding: 0.5em;
+    border-left-width: 0.5em;
+    border-left-style: solid;
+    border-color: #e0cb52;
+    background: #fcfaee !important;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: 3px solid #005a9c;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+table, thead, tr, td {
+    border-width: 1px;
+    border-style: solid;
+}
+
+table thead tr:first-child th {
+    background: #005a9c;
+    color: #fff;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background: #f0f6ff}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}</style>
 
     </head>
     <body class="vscode-body vscode-light">
